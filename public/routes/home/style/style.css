@@ -1,0 +1,74 @@
+html {
+    width: 1vw;
+    height: 1vw;
+}
+
+.container {
+    width: 98vw;
+    display: grid;
+    column-gap: 2rem;
+    grid-template-columns: 27.3rem 0.5rem 1fr auto;
+}
+
+.perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6rem;
+}
+
+.linha {
+    margin-top: 3.2rem;
+    width: 2px;
+    height: 100%;
+    background-color: var(--gray-300);
+}
+
+.dashbord {
+    padding-top: 2rem;
+    background-color: var(--blue-100);
+    
+}
+
+h1 {
+    font-family: var(--jost);
+    font-size: 3.2rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+
+.profileUser{
+    width: 14.5rem;
+    height: 14.5rem;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+
+.info {
+    width: 23.8rem;
+    height: 11.8rem;
+    padding-top: 3rem;
+    padding-left: 1.6rem;
+    background: var(--gray-500);
+    color: var(--white);
+    border-radius: 0.5rem;
+}
+
+.nome, .matricula {
+    display: flex;
+    gap: 1rem;
+}
+.matricula {
+    padding-top: 1.6rem;
+}
+
+p {
+    font-family: var(--inter);
+    font-size: 1.4rem;
+}
+
+a {
+    margin: 2rem;
+    padding: 1rem;
+    background: var(--blue-200);
+}
