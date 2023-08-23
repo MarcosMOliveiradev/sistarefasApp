@@ -13,10 +13,12 @@ html {
     font-size: 62.5%;
 
     --gray-300: #525252;
-    --gray-500: #525252;
+    --gray-500: #838383;
+    --gray-900: #525252;
 
     --white: #fff;
 
     --blue-100: #CAE2FC;
-    --blue-200: #007BFF;
+    --blue-200: #65AFFF;
+    --blue-300: #007BFF;
 }
