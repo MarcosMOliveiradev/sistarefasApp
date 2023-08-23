@@ -4,6 +4,10 @@ buttonEnviar.addEventListener('click', async () => {
     const matriculaF = document.getElementById('matricula').value
     const password = document.getElementById('password').value
 
+    if(password.length < 0){
+        throw new Error('senha ou login invalido')
+    }
+
     const matricula = parseInt(matriculaF)
     try {
         const response = await fetch('http://localhost:3333/usuario/', {
