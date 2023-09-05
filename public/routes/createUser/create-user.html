@@ -1,11 +1,64 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;700;800&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <link rel="stylesheet" href="../../style/global.css">
+    <link rel="stylesheet" href="./style/style.css">
+
+    <title>Criar Usuario</title>
 </head>
 <body>
+    <div class="container">
+        <div class="perfil">
+            <h1>W Engenharia</h1>
+            <img class="profileUser" src="./images.png" alt="foto de perfil">
     
+            <div class="info">
+                <div class="nome">
+                    <p class="nomeCandidato">nome: <p id="nome"></p></p>
+                </div>
+                <div class="matricula">
+                    <p class="matriculaCandidato">matricula: <p id="mat"></p></p>
+                </div>
+            </div>
+            <a class="CriarUser" href="">Criar Usuario</a>
+            <a class="editProfile" href="">Editar perfil</a>
+
+            <div class="button" id="close">
+                <button class="close">X</button>
+                <p>Sair</p>
+            </div>
+        </div>
+        <div class="linha"></div>
+
+        <div class="dashbord">
+            <h1>Cadastro de usuario</h1>
+
+            <div id="form">
+                <div class="formNome">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome">
+                </div>
+
+                <div class="formMatricula">
+                    <label for="matricula">matricula:</label>
+                    <input type="text" name="matricula" id="matricula">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script/app.js" async defer></script>
 </body>
 </html>

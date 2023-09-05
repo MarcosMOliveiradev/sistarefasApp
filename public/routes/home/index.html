@@ -26,14 +26,14 @@
     
             <div class="info">
                 <div class="nome">
-                    <p class="nomeCandidato">nome: <p id="nome">marcos</p></p>
+                    <p class="nomeCandidato">nome: <p id="nome"></p></p>
                 </div>
                 <div class="matricula">
-                    <p class="matriculaCandidato">matricula: <p>984</p></p>
+                    <p class="matriculaCandidato">matricula: <p id="mat"></p></p>
                 </div>
             </div>
-            <a class="CriarUser" href="">Criar Usuario</a>
-            <a class="editProfile" href="">Editar perfil</a>
+            <a class="CriarUser" id="criarUser">Criar Usuario</a>
+            <a class="editProfile">Editar perfil</a>
 
             <div class="button" id="close">
                 <button class="close">X</button>
@@ -41,7 +41,21 @@
             </div>
         </div>
         <div class="linha"></div>
+
         <div class="dashbord">
+            <div class="buttonsHeader">
+                <button>Relatório Diário</button>
+                <button>Relatório Mensal</button>
+                <button>Lista de Código</button>
+                <button>Criar Atividade</button>
+                <button>Criar Tarefa</button>
+            </div>
+
+            <div class="formData">
+                <label for="text">Data:</label>
+                <input type="text">
+                <button>Pesquisar</button>
+            </div>
         </div>
     </div>
 
