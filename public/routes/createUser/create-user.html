@@ -32,13 +32,9 @@
                     <p class="matriculaCandidato">matricula: <p id="mat"></p></p>
                 </div>
             </div>
-            <a class="CriarUser" href="">Criar Usuario</a>
-            <a class="editProfile" href="">Editar perfil</a>
+            <a class="CriarUser" id="home">Pagina inicial</a>
+            <!-- <a class="editProfile">Editar perfil</a> -->
 
-            <div class="button" id="close">
-                <button class="close">X</button>
-                <p>Sair</p>
-            </div>
         </div>
         <div class="linha"></div>
 
@@ -48,13 +44,32 @@
             <div id="form">
                 <div class="formNome">
                     <label for="nome">Nome:</label>
-                    <input type="text" name="nome" id="nome">
+                    <input type="text" name="nome" id="nomeForm">
                 </div>
 
                 <div class="formMatricula">
-                    <label for="matricula">matricula:</label>
-                    <input type="text" name="matricula" id="matricula">
+                    <label for="matricula">Matricula:</label>
+                    <input type="number" name="matricula" id="matricula">
                 </div>
+                <div class="formSenha">
+                    <label for="senha">Senha:</label>
+                    <input type="password" name="senha" id="senha">
+                </div>
+                <div class="formConfSenha">
+                    <label for="confSenha">Confirmar Senha:</label>
+                    <input type="password" name="confSenha" id="confSenha">
+                </div>
+                <div class="formPermission">
+                    <label for="Permission">Permissão:</label>
+                    <input list="bool"  name="Permission" id="permission">
+                    <datalist id="bool">
+                        <option value="true"></option>
+                        <option value="false"></option>
+                    </datalist>
+                </div>
+            </div>
+            <div class="buttonEnviar">
+                <a class="enviar" id="submit">Enviar</a>
             </div>
         </div>
     </div>
