@@ -1,4 +1,5 @@
 const enviar = document.getElementById('submit')
+const token = localStorage.getItem('token')
 
 enviar.addEventListener('click', async () => {
     const nome = await document.getElementById('nomeForm').value
@@ -24,6 +25,7 @@ enviar.addEventListener('click', async () => {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
+                'Authorization': `Bearer ${token}`
             },
             body: JSON.stringify({nome, matricula, password, permission})
         })
@@ -46,3 +48,20 @@ const home = document.getElementById('home')
 home.addEventListener('click', () => {
     window.location.href = '../home/index.html'
 })
+
+
+if(token == null) {
+    alert('Você não esta altenticado para essa rota!')
+    window.location.href = '../../index.html'
+}
+// decodifica o token
+const [headerEncoded, payloadEncoded] = token.split('.');
+const payload = JSON.parse(atob(payloadEncoded));
+
+// pega os elementos correspondente a nome e matricula
+const nome = document.getElementById('nome')
+const matriculaU = document.getElementById('mat')
+
+// seta nome e matricula nos elementos correspondentes
+nome.innerHTML = payload.nome
+matriculaU.innerHTML = payload.matricula

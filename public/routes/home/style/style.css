@@ -27,7 +27,6 @@ html {
 
 .dashbord {
     padding-top: 2rem;
-    background-color: var(--blue-100);
 }
 
 h1 {
@@ -125,5 +124,82 @@ a {
 
 .buttonsHeader {
     display: flex;
-    gap: 2.4rem;
+    justify-content: space-between;
+    margin: 6rem;
+}
+
+.buttonsHeader button {
+    background: var(--blue-200);
+    color: var(--white);
+    width: 20rem;
+    padding: 2rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+.buttonsHeader button:hover{
+    background: var(--blue-300);
+}
+
+.formData input {
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    border: 0.1rem solid var(--gray-300);
+    font-size: 2rem;
+    font-family: var(--jost);
+}
+
+.formData label {
+    margin-left: 4rem;
+    margin-right: 1rem;
+    font-size: 2rem;
+}
+
+.formData button {
+    background: var(--blue-200);
+    color: var(--white);
+    margin-left: 2rem;
+    width: 15rem;
+    height: 4.8rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+.dashbordItens {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3.8rem;
+    background: var(--blue-100);
+    width: 80%;
+    height: 65rem;
+    border-radius: 1rem;
+    position: fixed;
+}
+
+.dashbordItens div {
+    border-right: 0.1rem solid var(--gray-300);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem;
+}
+
+.dashbordItens div h2 {
+    width: 200%;
+    display: flex;
+    justify-content: center;
+}
+
+.dashbordItens div p {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    width: 190%;
+    border-top: 0.1rem solid var(--gray-300);
+    display: flex;
+    justify-content: center;
+}
+
+.dashbordItens #termino {
+    border: none;
 }
