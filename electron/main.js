@@ -2,8 +2,8 @@ const {app, BrowserWindow} = require('electron')
 
 function createWindow() {
     const win = new BrowserWindow({
-        width: 1080,
-        height: 750,
+        width: 1650,
+        height: 920,
         webPreferences: {
           contentSecurityPolicy: "default-src 'self';"
         }

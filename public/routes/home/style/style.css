@@ -171,7 +171,7 @@ a {
     margin-top: 3.8rem;
     background: var(--blue-100);
     width: 80%;
-    height: 65rem;
+    height: 50rem;
     border-radius: 1rem;
     position: fixed;
 }
@@ -194,7 +194,7 @@ a {
 .dashbordItens div p {
     margin-top: 2rem;
     padding-top: 1rem;
-    width: 190%;
+    width: 150%;
     border-top: 0.1rem solid var(--gray-300);
     display: flex;
     justify-content: center;
