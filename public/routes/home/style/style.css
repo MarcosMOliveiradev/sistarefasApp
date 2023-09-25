@@ -194,7 +194,7 @@ a {
 .dashbordItens div p {
     margin-top: 2rem;
     padding-top: 1rem;
-    width: 150%;
+    width: 100%;
     border-top: 0.1rem solid var(--gray-300);
     display: flex;
     justify-content: center;

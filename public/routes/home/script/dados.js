@@ -1,3 +1,5 @@
+import { DataAPI, CodigoAPI } from './Data.js'
+
 const pesquisar = document.getElementById('pesquisar')
 
 pesquisar.addEventListener('click', async () => {
@@ -7,8 +9,7 @@ pesquisar.addEventListener('click', async () => {
         data.getMonth() + 1
       ).padStart(2, "0")}/${data.getFullYear()}`;
 
-    console.log(formattedDate)
-    if(formattedDate === "") {
+    if(formattedDate === "NaN/NaN/NaN" || formattedDate === "") {
         alert('O campo data não pode estar vazio')
         throw new Error('Campo data está vazio!');
     }
@@ -26,7 +27,16 @@ pesquisar.addEventListener('click', async () => {
                 'Authorization': `Bearer ${token}`
             }
         })
-        console.log(response.json())
+
+        const API = await response.json()
+        console.log(API)
+
+        let dataHtml = document.getElementById('data')
+        let codigoHtml = document.getElementById('codigo')
+
+        DataAPI(API, dataHtml)
+        CodigoAPI(API, codigoHtml)
+
     } catch(err) {
         console.error('Error', err)
     }
