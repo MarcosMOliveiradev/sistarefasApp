@@ -1,4 +1,14 @@
-import { DataAPI, CodigoAPI } from './Data.js'
+import {
+    DataAPI,
+    CodigoAPI,
+    ItemAPI,
+    SetorAPI,
+    DescricaoAPI,
+    IdDocAPI,
+    QtdFolhaAPI,
+    HoraInicioAPI,
+    HoraTerminoAPI 
+    } from './Data.js'
 
 const pesquisar = document.getElementById('pesquisar')
 
@@ -32,10 +42,24 @@ pesquisar.addEventListener('click', async () => {
         console.log(API)
 
         let dataHtml = document.getElementById('data')
+        let itemHtml = document.getElementById('item')
         let codigoHtml = document.getElementById('codigo')
+        let setorHtml = document.getElementById('setor')
+        let descricaoHtml = document.getElementById('descricao')
+        let idDocumentoHtml = document.getElementById('idDocumento')
+        let qtdFoljaHtml = document.getElementById('qtdFolja')
+        let inicioHtml = document.getElementById('inicio')
+        let terminoHtml = document.getElementById('termino')
 
         DataAPI(API, dataHtml)
         CodigoAPI(API, codigoHtml)
+        ItemAPI(API, itemHtml)
+        SetorAPI(API, setorHtml)
+        DescricaoAPI(API, descricaoHtml)
+        IdDocAPI(API, idDocumentoHtml)
+        QtdFolhaAPI(API, qtdFoljaHtml)
+        HoraInicioAPI(API, inicioHtml)
+        HoraTerminoAPI(API, terminoHtml)
 
     } catch(err) {
         console.error('Error', err)
