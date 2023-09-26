@@ -8,18 +8,22 @@ import {
     QtdFolhaAPI,
     HoraInicioAPI,
     HoraTerminoAPI 
-    } from './Data.js'
+    } from '../../script/Data.js'
+
+import { incrementarUmDia } from './formatData.js'
 
 const pesquisar = document.getElementById('pesquisar')
 
 pesquisar.addEventListener('click', async () => {
-    const dataPesquisa = document.getElementById('dataPesquisa').value
-    const data = new Date(dataPesquisa)
-    const formattedDate = `${String(data.getDate() + 1).padStart(2, "0")}-${String(
-        data.getMonth() + 1
-      ).padStart(2, "0")}-${data.getFullYear()}`;
+    const dataInicial = document.getElementById('dataInicial').value
+    
+    const dataI = new Date(dataInicial)
 
-    if(formattedDate === "NaN/NaN/NaN" || formattedDate === "") {
+    const formattedDateInicial = incrementarUmDia(dataI)
+    
+    console.log(formattedDateInicial)
+
+    if(formattedDateInicial === "NaN/NaN/NaN" || formattedDateInicial === "") {
         alert('O campo data não pode estar vazio')
         throw new Error('Campo data está vazio!');
     }
@@ -30,7 +34,7 @@ pesquisar.addEventListener('click', async () => {
         window.location.href = '../../index.html'
     }
     try {
-        const response = await fetch(`http://localhost:3333/atividade/data?data=${formattedDate}`, {
+        const response = await fetch(`http://localhost:3333/atividade/intervalData?dataIntervalo=${formattedDateInicial}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',

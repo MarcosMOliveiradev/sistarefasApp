@@ -172,29 +172,119 @@ a {
     background: var(--blue-100);
     width: 80%;
     height: 50rem;
+    max-height: 50rem;
+    overflow-y: auto;
     border-radius: 1rem;
     position: fixed;
 }
 
 .dashbordItens div {
-    border-right: 0.1rem solid var(--gray-300);
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 4rem;
 }
+/* div data */
+.dashbordItens #data {
+    margin-left: 1rem;
+    width: 10rem;
+}
+.dashbordItens #data p {
+    width: 10rem;
+}
+
+/* div item */
+.dashbordItens #item {
+    width: 2rem;
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+.dashbordItens #item p {
+    width: 8rem;
+}
+
+/* div codigo */
+.dashbordItens #codigo {
+    width: 2rem;
+    margin-left: 1rem;
+
+}
+.dashbordItens #codigo p {
+    width: 9rem;
+}
+
+/* div setor */
+.dashbordItens #setor {
+    width: 10rem;
+    margin-left: 1rem;
+}
+.dashbordItens #setor p {
+    width: 10rem;
+}
+
+/* div descricao */
+.dashbordItens #descricao {
+    width: 40rem;
+    margin-left: 1rem;
+}
+.dashbordItens #descricao p {
+    width: 40rem;
+}
+
+/* div idDocumento */
+.dashbordItens #idDocumento {
+    width: 15rem;
+    margin-top: -1.8rem;
+    text-align: center;
+    margin-left: -2rem;
+}
+.dashbordItens #idDocumento p {
+    width: 10rem;
+}
+
+/* div quantidade de folha */
+.dashbordItens #qtdFolja {
+    width: 15rem;
+    margin-top: -1.8rem;
+    text-align: center;
+    margin-left: -4rem;
+}
+.dashbordItens #qtdFolja p {
+    width: 10rem;
+}
+
+/* div inicio */
+.dashbordItens #inicio {
+    width: 15rem;
+    margin-top: -1.8rem;
+    text-align: center;
+    margin-left: -4rem;
+}
+.dashbordItens #inicio p {
+    width: 10rem;
+}
+
+/* div termino */
+.dashbordItens #termino {
+    width: 15rem;
+    margin-top: -1.8rem;
+    text-align: center;
+    margin-left: -4rem;
+}
+.dashbordItens #termino p {
+    width: 10rem;
+}
 
 .dashbordItens div h2 {
-    width: 200%;
     display: flex;
     justify-content: center;
+    font-family: var(--roboto);
 }
 
 .dashbordItens div p {
     margin-top: 2rem;
     padding-top: 1rem;
-    width: 100%;
     border-top: 0.1rem solid var(--gray-300);
     display: flex;
     justify-content: center;

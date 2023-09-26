@@ -3,7 +3,7 @@ const close = document.getElementById('close');
 // Finaliza a sessão
 close.addEventListener('click', async () => {
     await localStorage.removeItem('token')
-    window.location.href = '../../index.html'
+    window.location.href = '../../../index.html'
 })
 
 // pega o token
@@ -38,12 +38,12 @@ function createUser(){
 
 createUser()
 
-function relatorioMes() {
-    const relatorioMensal = document.getElementById('mensal')
+function relatorioDiario() {
+    const relatorioDiario = document.getElementById('diario')
 
-    relatorioMensal.addEventListener('click', () => {
-        window.location.href = './relatorioMes/index.html'
+    relatorioDiario.addEventListener('click', () => {
+        window.location.href = '../index.html'
     })
 }
 
-relatorioMes()
+relatorioDiario()
