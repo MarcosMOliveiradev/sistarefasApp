@@ -30,7 +30,7 @@ pesquisar.addEventListener('click', async () => {
         window.location.href = '../../index.html'
     }
     try {
-        const response = await fetch(`http://localhost:3333/atividade/data?data=${formattedDate}`, {
+        const response = await fetch(`http://192.168.0.64:3333/atividade/data?data=${formattedDate}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',

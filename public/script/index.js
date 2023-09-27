@@ -10,7 +10,7 @@ buttonEnviar.addEventListener('click', async () => {
 
     const matricula = parseInt(matriculaF)
     try {
-        const response = await fetch('http://localhost:3333/usuario/', {
+        const response = await fetch('http://192.168.0.64:3333/usuario/', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

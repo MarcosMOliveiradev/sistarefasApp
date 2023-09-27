@@ -31,7 +31,7 @@ function createUser(){
 
     create.addEventListener('click', async () => {
         if(payload.permission == true) {
-            window.location.href = '../createUser/create-user.html'
+            window.location.href = '../../createUser/create-user.html'
         }
     })
 }

@@ -4,12 +4,17 @@
   "description": "",
   "main": "./electron/main.js",
   "scripts": {
-    "electron": "electron ."
+    "electron": "electron .",
+    "build": "npx electron-packager . --icon publi/logo.png --out=packages"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "electron": "^26.0.0"
+  },
+  "devDependencies": {
+    "electron-builder": "^24.6.4",
+    "electron-packager": "^17.1.2"
   }
 }

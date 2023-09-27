@@ -1,23 +1,18 @@
 const {app, BrowserWindow} = require('electron')
+const { resolve } = require('node:path')
+const logo = resolve(__dirname, '../', 'public', 'logo.png')
 
-function createWindow() {
-    const win = new BrowserWindow({
-        width: 1650,
-        height: 920,
-        webPreferences: {
-          contentSecurityPolicy: "default-src 'self';"
-        }
-    })
-
-    win.loadFile('./public/index.html')
+function App() {
+  const win = require('./createWindow.js')
+  const tray = require('./tray.js')
 }
 
 app.whenReady().then(() => {
-    createWindow()
+    App()
   
     app.on('activate', () => {
       if (BrowserWindow.getAllWindows().length === 0) {
-        createWindow()
+        App()
       }
     })
   })

@@ -21,7 +21,7 @@ enviar.addEventListener('click', async () => {
     let permission = await permissionForm === 'true' ? true : false
 
     try {
-        const response = await fetch('http://localhost:3333/usuario/created', {
+        const response = await fetch('http://192.168.0.64:3333/usuario/created', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
