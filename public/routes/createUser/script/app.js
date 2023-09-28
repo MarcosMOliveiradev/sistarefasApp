@@ -1,3 +1,5 @@
+import { ENV_API } from "../../../env"
+
 const enviar = document.getElementById('submit')
 const token = localStorage.getItem('token')
 
@@ -21,7 +23,8 @@ enviar.addEventListener('click', async () => {
     let permission = await permissionForm === 'true' ? true : false
 
     try {
-        const response = await fetch('http://192.168.0.64:3333/usuario/created', {
+        let Api = ENV_API
+        const response = await fetch(`${Api}/usuario/created`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

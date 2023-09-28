@@ -1,3 +1,4 @@
+import { ENV_API } from '../../../../env.js'
 import {
     DataAPI,
     CodigoAPI,
@@ -34,7 +35,8 @@ pesquisar.addEventListener('click', async () => {
         window.location.href = '../../index.html'
     }
     try {
-        const response = await fetch(`http://192.168.0.64:3333/atividade/intervalData?dataIntervalo=${formattedDateInicial}`, {
+        let Api = ENV_API
+        const response = await fetch(`${Api}/atividade/intervalData?dataIntervalo=${formattedDateInicial}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',

@@ -1,3 +1,5 @@
+import { ENV_API } from '../../../env.js';
+
 import {
     DataAPI,
     CodigoAPI,
@@ -8,7 +10,7 @@ import {
     QtdFolhaAPI,
     HoraInicioAPI,
     HoraTerminoAPI 
-    } from './Data.js'
+    } from './Data.js';
 
 const pesquisar = document.getElementById('pesquisar')
 
@@ -30,7 +32,8 @@ pesquisar.addEventListener('click', async () => {
         window.location.href = '../../index.html'
     }
     try {
-        const response = await fetch(`http://192.168.0.64:3333/atividade/data?data=${formattedDate}`, {
+        let Api = ENV_API
+        const response = await fetch(`${Api}/atividade/data?data=${formattedDate}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
