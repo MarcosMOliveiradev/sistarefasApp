@@ -56,7 +56,7 @@
             </div>
 
             <div class="formData">
-                <label for="text">Data:</label>
+                <label for="dataPesquisa">Data:</label>
                 <input type="date" id="dataPesquisa">
                 <button id="pesquisar">Pesquisar</button>
             </div>
@@ -92,8 +92,63 @@
             </div>
         </div>
     </div>
+    <div id="criarAtividade" class="close">
+        <div class="caixaForms">
+                <button class="buttonClose" id="closeModal">X</button>
+            <h2>Cadastro de Atividade</h2>
+        <div id="forms">
+            <div id="formDateInsert">
+                <label for="dateInsarte">Data:</label>
+                <input type="date" id="dateInsart">
+            </div>
+
+            <div id="formItemInsert">
+                <label for="itemInsert">Item:</label>
+                <input type="text" id="itemInsert">
+            </div>
+
+            <div id="formCodigoInsert">
+                <label for="codigoInsert">Código Atividade:</label>
+                <input type="text" id="codigoInsert">
+            </div>
+
+            <div id="formSetorInsert">
+                <label for="setorInsert">Setor:</label>
+                <input type="text" id="setorInsert" class="" readonly>
+            </div>
+
+            <div id="formDescricaoInsert">
+                <label for="descricaoInsert">Descrição da Atividade:</label>
+                <input type="text" class="" id="descricaoInsert" readonly>
+            </div>
+
+            <div id="formIdInsert">
+                <label for="idInsert">Id do Documento</label>
+                <input type="text" id="idInsert">
+            </div>
+
+            <div id="formQTDFolhaInsert">
+                <label for="QTDFolhaInsert"> Quantidade de Folhas:</label>
+                <input type="text" id="QTDFolhaInsert">
+            </div>
+
+            <div id="formHoraInicialInsert">
+                <label for="horaInicialInsert">Hora de Inicio:</label>
+                <input type="text" id="horaInicialInsert">
+            </div>
+
+            <div id="formHoraTerminoInsert">
+                <label for="horaTerminoInsert">Hora de Termino:</label>
+                <input type="text" id="horaTerminoInsert">
+            </div>
+        </div>
+
+        <button class="criarAtividadeButton" id="criarAtividadeButton">Enviar</button>
+        </div>
+    </div>
 
     <script type="module" src="./script/app.js" async defer></script>
     <script type="module" src="./script/dados.js" async defer></script>
+    <script type="module" src="./script/CriarAtividade.js" async defer></script>
 </body>
 </html>

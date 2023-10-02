@@ -36,8 +36,6 @@ function createUser(){
     })
 }
 
-createUser()
-
 function relatorioMes() {
     const relatorioMensal = document.getElementById('mensal')
 
@@ -46,4 +44,27 @@ function relatorioMes() {
     })
 }
 
+function openModal(){
+    const opeModal = document.getElementById('novaAtividade')
+
+    opeModal.addEventListener('click', () => {
+        const modal = document.getElementById('criarAtividade')
+
+        modal.classList.remove('close')
+    })
+}
+
+function closeModal(){
+    const closeModal = document.getElementById('closeModal')
+    closeModal.addEventListener('click', () => {
+        const closeModal = document.getElementById('criarAtividade')
+
+        
+        closeModal.classList.add('close')
+    })
+}
+
+closeModal()
+openModal()
+createUser()
 relatorioMes()
