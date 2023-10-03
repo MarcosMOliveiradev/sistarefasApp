@@ -1,5 +1,5 @@
 import { ENV_API } from '../../../env.js';
-
+import { gerarPDF } from './gerarPDF.js'
 import {
     DataAPI,
     CodigoAPI,
@@ -14,6 +14,12 @@ import {
 
 const pesquisar = document.getElementById('pesquisar')
 
+const token = localStorage.getItem('token')
+if(token == null) {
+    alert('Você não esta altenticado para essa rota!')
+    window.location.href = '../../index.html'
+}
+
 pesquisar.addEventListener('click', async () => {
     const dataPesquisa = document.getElementById('dataPesquisa').value
     const data = new Date(dataPesquisa)
@@ -21,7 +27,7 @@ pesquisar.addEventListener('click', async () => {
         data.getMonth() + 1
       ).padStart(2, "0")}-${data.getFullYear()}`;
 
-    if(formattedDate === "NaN/NaN/NaN" || formattedDate === "" || formattedDate === "NaN-NaN-NaN") {
+    if(formattedDate === "NaN/NaN/NaN" || formattedDate === "") {
         alert('O campo data não pode estar vazio')
         throw new Error('Campo data está vazio!');
     }
@@ -67,3 +73,17 @@ pesquisar.addEventListener('click', async () => {
         console.error('Error', err)
     }
 })
+
+// função do pdf
+
+gerarPDF();
+
+function sairDoPdf() {
+    const sair = document.getElementById('sair')
+
+    sair.addEventListener('click', () => {
+        window.location.href = '../home/index.html'
+    })
+}
+
+sairDoPdf()

@@ -4,6 +4,7 @@ const token = localStorage.getItem('token')
 
 const codigoAtividade = document.getElementById('codigoInsert')
 
+// busca o setor e a descrição da atividade
 codigoAtividade.addEventListener('keydown', async (event) => {
     if(event.keyCode === 13) {
         try{

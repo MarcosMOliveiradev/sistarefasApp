@@ -64,6 +64,15 @@ function closeModal(){
     })
 }
 
+function relatorioPDF(){
+    const relatorioPdf = document.getElementById('geratPdf')
+
+    relatorioPdf.addEventListener('click', () => {
+        window.location.href = '../pdf/index.html'
+    })
+}
+
+relatorioPDF()
 closeModal()
 openModal()
 createUser()

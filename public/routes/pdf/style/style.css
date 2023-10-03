@@ -1,0 +1,221 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+#formularioGeral{
+    width: 100vw;
+}
+#relatorioPDF{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    
+}
+
+#relatorioPDF .cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cabecalho p strong {
+    font-weight: 300;
+}
+
+.cabecalho p {
+    display: flex;
+    margin-top: 2rem;
+    font-family: var(--roboto);
+    font-size: 2rem;
+}
+
+#relatorioPDF .dashbordItens {
+    margin-top: 3rem;
+}
+
+.formData input {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5;
+    border: 0.1rem solid var(--gray-300);
+    font-size: 2rem;
+    font-family: var(--jost);
+}
+
+.formData label {
+    margin-left: 4rem;
+    margin-right: 1rem;
+    font-size: 2rem;
+}
+
+.formData button {
+    background: var(--blue-200);
+    color: var(--white);
+    margin-left: 2rem;
+    width: 15rem;
+    height: 4rem;
+    cursor: pointer;
+}
+
+.formData button:hover {
+    background-color: var(--blue-300);
+}
+
+
+.dashbordItens {
+    display: flex;
+    justify-content: space-between;
+    background: var(--blue-100);
+    width: 95%;
+    height: 50rem;
+    border-radius: 1rem;
+}
+
+.dashbordItens div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem;
+}
+/* div data */
+.dashbordItens #data {
+    /* margin-left: 1rem; */
+    width: 10rem;
+}
+.dashbordItens #data p {
+    width: 5rem;
+}
+
+/* div item */
+.dashbordItens #item {
+    width: 2rem;
+    display: flex;
+    align-items: center;
+    margin-left: -7rem;
+}
+.dashbordItens #item p {
+    width: 8rem;
+}
+
+/* div codigo */
+.dashbordItens #codigo {
+    width: 2rem;
+    margin-left: -2rem;
+
+}
+.dashbordItens #codigo p {
+    width: 9rem;
+}
+
+/* div setor */
+.dashbordItens #setor {
+    width: 10rem;
+    margin-left: -5rem;
+}
+.dashbordItens #setor p {
+    width: 10rem;
+}
+
+/* div descricao */
+.dashbordItens #descricao {
+    width: 35rem;
+    margin-left: -5rem;
+}
+.dashbordItens #descricao p {
+    width: 40rem;
+}
+
+/* div idDocumento */
+.dashbordItens #idDocumento {
+    width: 15rem;
+    margin-top: -1.8rem;
+    text-align: center;
+    margin-left: -4rem;
+}
+.dashbordItens #idDocumento p {
+    width: 10rem;
+}
+
+/* div quantidade de folha */
+.dashbordItens #qtdFolja {
+    width: 15rem;
+    margin-top: -1.8rem;
+    text-align: center;
+    margin-left: -7rem;
+}
+.dashbordItens #qtdFolja p {
+    width: 10rem;
+}
+
+/* div inicio */
+.dashbordItens #inicio {
+    width: 15rem;
+    margin-top: -1.8rem;
+    text-align: center;
+    margin-left: -7rem;
+}
+.dashbordItens #inicio p {
+    width: 10rem;
+}
+
+/* div termino */
+.dashbordItens #termino {
+    width: 17rem;
+    margin-top: -1.8rem;
+    text-align: center;
+    margin-left: -6rem;
+}
+.dashbordItens #termino p {
+    width: 10rem;
+}
+
+.dashbordItens div h2 {
+    display: flex;
+    justify-content: center;
+    font-family: var(--roboto);
+}
+
+.dashbordItens div p {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 0.1rem solid var(--gray-300);
+    display: flex;
+    justify-content: center;
+}
+
+.dashbordItens #termino {
+    border: none;
+}
+
+#gerarPDF {
+    background: var(--blue-200);
+    color: var(--white);
+    top: 7rem;
+    position: absolute;
+    margin-left: 4rem;
+    width: 15rem;
+    height: 4.8rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+#gerarPDF:hover {
+    background: var(--blue-300);
+}
+
+#sair {
+    background: rgba(196, 32, 20, 0.986);
+    color: var(--white);
+    top: 15rem;
+    position: absolute;
+    margin-left: 4rem;
+    width: 15rem;
+    height: 4.8rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+#sair:hover {
+    background: rgba(167, 3, 3, 0.863);
+}
