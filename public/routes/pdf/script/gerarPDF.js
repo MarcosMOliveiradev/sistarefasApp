@@ -24,9 +24,9 @@ export async function gerarPDF(){
         const option = {
             margin: 1,
             filename: `${nome}.pdf`,
-            image: { type: 'jpeg', quality: 0.98 },
+            image: { type: 'jpeg', quality: 1},
             pagebreak: { mode: ['avoid-all', 'css']},
-            html2canvas:  { scale: 1 },
+            html2canvas:  { scale: 10 },
             jsPDF:{ unit: 'mm', format: 'a4', orientation: 'landscape' }
         }
 

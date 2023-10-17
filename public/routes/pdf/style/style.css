@@ -92,7 +92,7 @@ body {
     width: 2rem;
     display: flex;
     align-items: center;
-    margin-left: -7rem;
+    margin-left: -1rem;
 }
 .dashbordItens #item p {
     width: 8rem;
@@ -101,7 +101,7 @@ body {
 /* div codigo */
 .dashbordItens #codigo {
     width: 2rem;
-    margin-left: -2rem;
+    margin-left: 1rem;
 
 }
 .dashbordItens #codigo p {
@@ -111,27 +111,26 @@ body {
 /* div setor */
 .dashbordItens #setor {
     width: 10rem;
-    margin-left: -5rem;
 }
 .dashbordItens #setor p {
     width: 10rem;
+    margin-left: 1rem;
 }
 
 /* div descricao */
 .dashbordItens #descricao {
-    width: 35rem;
-    margin-left: -5rem;
+    width: 29rem;
+    margin-left: -4rem;
 }
 .dashbordItens #descricao p {
-    width: 40rem;
+    width: 20rem;
 }
 
 /* div idDocumento */
 .dashbordItens #idDocumento {
-    width: 15rem;
+    width: 10rem;
     margin-top: -1.8rem;
     text-align: center;
-    margin-left: -4rem;
 }
 .dashbordItens #idDocumento p {
     width: 10rem;
@@ -142,7 +141,6 @@ body {
     width: 15rem;
     margin-top: -1.8rem;
     text-align: center;
-    margin-left: -7rem;
 }
 .dashbordItens #qtdFolja p {
     width: 10rem;
@@ -153,7 +151,7 @@ body {
     width: 15rem;
     margin-top: -1.8rem;
     text-align: center;
-    margin-left: -7rem;
+    margin-left: -3rem;
 }
 .dashbordItens #inicio p {
     width: 10rem;
