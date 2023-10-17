@@ -1,4 +1,4 @@
-import { ENV_API } from "../../../env"
+import { ENV_API } from "../../../env.js"
 
 const enviar = document.getElementById('submit')
 const token = localStorage.getItem('token')
@@ -9,6 +9,13 @@ enviar.addEventListener('click', async () => {
     const password = document.getElementById('senha').value
     const confSenha = document.getElementById('confSenha').value
     let permissionForm = document.getElementById('permission').value
+
+    const verifica = password.split("")
+
+    if (verifica.length < 6 ) {
+        alert("A senha precisa ter mais de 6 caracteres")
+        throw new Error("A senha precisa ter mais de 6 caracteres")
+    }
     
     const matricula = await parseInt(matriculaF)
     if(nome === '' || matricula === '' || password === '' || confSenha  === '' || permissionForm === '')  {

@@ -10,7 +10,7 @@ html {
     height: 50vw;
     display: grid;
     column-gap: 2rem;
-    grid-template-columns: 27.3rem 0.5rem 1fr auto;
+    grid-template-columns: 25rem 0.3rem 1fr auto;
 }
 
 .perfil {
@@ -126,14 +126,14 @@ a {
 
 .buttonsHeader {
     display: flex;
-    justify-content: space-between;
-    margin: 6rem;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
 }
 
 .buttonsHeader button {
     background: var(--blue-200);
     color: var(--white);
-    width: 20rem;
+    width: 15rem;
     padding: 2rem;
     cursor: pointer;
     border-radius: 0.5rem;
@@ -172,7 +172,7 @@ a {
     justify-content: space-between;
     margin-top: 3.8rem;
     background: var(--blue-100);
-    width: 80%;
+    width: 73%;
     height: 50rem;
     max-height: 50rem;
     overflow-y: auto;
@@ -184,11 +184,11 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 4rem;
+    padding-top: 4rem;
+    font-size: 1rem;
 }
 /* div data */
 .dashbordItens #data {
-    margin-left: 1rem;
     width: 10rem;
 }
 .dashbordItens #data p {
@@ -200,7 +200,6 @@ a {
     width: 2rem;
     display: flex;
     align-items: center;
-    margin-left: 1rem;
 }
 .dashbordItens #item p {
     width: 8rem;
@@ -209,7 +208,7 @@ a {
 /* div codigo */
 .dashbordItens #codigo {
     width: 2rem;
-    margin-left: 1rem;
+    margin-left: 3rem;
 
 }
 .dashbordItens #codigo p {
@@ -228,7 +227,7 @@ a {
 /* div descricao */
 .dashbordItens #descricao {
     width: 40rem;
-    margin-left: 1rem;
+    margin-left: -11rem;
 }
 .dashbordItens #descricao p {
     width: 40rem;
@@ -236,10 +235,10 @@ a {
 
 /* div idDocumento */
 .dashbordItens #idDocumento {
-    width: 15rem;
+    width: 9rem;
     margin-top: -1.8rem;
     text-align: center;
-    margin-left: -2rem;
+    margin-left: -9rem;
 }
 .dashbordItens #idDocumento p {
     width: 10rem;
@@ -247,10 +246,9 @@ a {
 
 /* div quantidade de folha */
 .dashbordItens #qtdFolja {
-    width: 15rem;
+    width: 7rem;
     margin-top: -1.8rem;
     text-align: center;
-    margin-left: -4rem;
 }
 .dashbordItens #qtdFolja p {
     width: 10rem;
@@ -258,10 +256,9 @@ a {
 
 /* div inicio */
 .dashbordItens #inicio {
-    width: 15rem;
+    width: 7rem;
     margin-top: -1.8rem;
     text-align: center;
-    margin-left: -4rem;
 }
 .dashbordItens #inicio p {
     width: 10rem;
@@ -269,10 +266,9 @@ a {
 
 /* div termino */
 .dashbordItens #termino {
-    width: 15rem;
+    width: 8rem;
     margin-top: -1.8rem;
     text-align: center;
-    margin-left: -4rem;
 }
 .dashbordItens #termino p {
     width: 10rem;
@@ -308,8 +304,8 @@ a {
 }
 .caixaForms {
     border-radius: 1rem;
-    width: 60%;
-    height: 70%;
+    width: 75%;
+    height: 85%;
     background: var(--white);
     display: flex;
     flex-direction: column;
@@ -322,11 +318,10 @@ a {
     font-size: 3rem;
 }
 #forms {
-    margin-left: 30rem;
     display: grid;
     grid-template-columns: 50% 50%;
     gap: 2rem;
-    width: 100%;
+    width: 75%;
     height: 65%;
 }
 
@@ -373,7 +368,7 @@ a {
     cursor: pointer;
     background-color: red;
     margin-top: 2rem;
-    margin-left: 85rem;
+    margin-left: 70rem;
 }
 
 .readonly{
