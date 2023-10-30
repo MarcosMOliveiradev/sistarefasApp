@@ -21,8 +21,6 @@ pesquisar.addEventListener('click', async () => {
     const dataI = new Date(dataInicial)
 
     const formattedDateInicial = incrementarUmDia(dataI)
-    
-    console.log(formattedDateInicial)
 
     if(formattedDateInicial === "NaN/NaN/NaN" || formattedDateInicial === "") {
         alert('O campo data não pode estar vazio')

@@ -107,7 +107,7 @@ export function IdDocAPI(API, html) {
         const paragrafo = document.createElement("p")
 
         paragrafo.textContent = objeto.id_documento
-        if(objeto.quantidade_de_folhas == null) {
+        if(objeto.id_documento == null || objeto.id_documento == "") {
             paragrafo.textContent = 0
             return html.appendChild(paragrafo)
         }
@@ -130,7 +130,7 @@ export function QtdFolhaAPI(API, html) {
         const paragrafo = document.createElement("p")
 
         paragrafo.textContent = objeto.quantidade_de_folhas
-        if(objeto.quantidade_de_folhas == null) {
+        if(objeto.quantidade_de_folhas == null || objeto.quantidade_de_folhas == "") {
             paragrafo.textContent = 0
             return html.appendChild(paragrafo)
         }
