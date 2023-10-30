@@ -47,3 +47,13 @@ function relatorioDiario() {
 }
 
 relatorioDiario()
+
+function pdf(){
+    const gerarPDF = document.getElementById('PDF')
+
+    gerarPDF.addEventListener('click', () => {
+        window.location.href = '../../pdf/index.html'
+    })
+}
+
+pdf()
