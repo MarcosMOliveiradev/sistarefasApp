@@ -1,8 +1,19 @@
 import { ENV_API } from '../env.js';
 
 const buttonEnviar = document.getElementById('entrar');
+const enter = document.getElementById('password')
 
-buttonEnviar.addEventListener('click', async () => {
+// Executa a função de login quando a tecla Enter é pressionada.
+enter.addEventListener('keydown', async (event) => {
+    if(event.keyCode === 13){
+        login()
+    }
+})
+
+// Executa a função de login quando o botão de login é clicado
+buttonEnviar.addEventListener('click', login)
+
+async function login(){
     const matriculaF = document.getElementById('matricula').value
     const password = document.getElementById('password').value
 
@@ -32,4 +43,4 @@ buttonEnviar.addEventListener('click', async () => {
     } catch(err) {
         console.error('Erro ao fazer login', err)
     }
-})
+}
