@@ -6,7 +6,7 @@ const codigoAtividade = document.getElementById('codigoInsert')
 
 // busca o setor e a descrição da atividade
 codigoAtividade.addEventListener('keydown', async (event) => {
-    if(event.keyCode === 13) {
+    if(event.keyCode === 13 || event.keyCode === 9) {
         try{
             let Api = ENV_API
             const response = await fetch(`${Api}/tasck/codigo?codigoTarefa=${codigoAtividade.value}`, {
