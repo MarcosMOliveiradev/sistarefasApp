@@ -217,3 +217,27 @@ body {
 #sair:hover {
     background: rgba(167, 3, 3, 0.863);
 }
+
+.formFilt input {
+    margin-top: 1rem;
+    width: 11rem;
+    padding: 0.5rem;
+    border-radius: 0.5;
+    border: 0.1rem solid var(--gray-300);
+    font-size: 2rem;
+    font-family: var(--jost);
+}
+
+.formFilt {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 6rem;
+    left: 20rem;
+}
+
+.formFilt label {
+    margin-left: 4rem;
+    margin-right: 1rem;
+    font-size: 2rem;
+}
