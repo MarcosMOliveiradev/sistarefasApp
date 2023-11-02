@@ -72,6 +72,15 @@ function relatorioPDF(){
     })
 }
 
+function listaCodigo(){
+    const listaCodigo = document.getElementById('listaCodigo')
+
+    listaCodigo.addEventListener('click', () => {
+        window.location.href = '../listaTarefa/index.html'
+    })
+}
+
+listaCodigo()
 relatorioPDF()
 closeModal()
 openModal()

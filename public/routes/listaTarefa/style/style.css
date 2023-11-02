@@ -1,0 +1,124 @@
+html {
+    width: 1vw;
+    height: 1vw;
+}
+
+.container {
+    position: absolute;
+    z-index: 1;
+    width: 98vw;
+    height: 50vw;
+    display: grid;
+    column-gap: 2rem;
+    grid-template-columns: 25rem 0.3rem 1fr auto;
+}
+
+.perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6rem;
+}
+
+.linha {
+    margin-top: 3.2rem;
+    width: 2px;
+    height: 93%;
+    background-color: var(--gray-300);
+}
+
+.dashbord {
+    padding-top: 2rem;
+}
+
+h1 {
+    font-family: var(--jost);
+    font-size: 3.2rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+
+.profileUser{
+    width: 14.5rem;
+    height: 14.5rem;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+
+.info {
+    width: 23.8rem;
+    height: 12.8rem;
+    padding-top: 3rem;
+    padding-left: 1.6rem;
+    margin-bottom: 4rem;
+    background: var(--gray-900);
+    color: var(--white);
+    border-radius: 0.5rem;
+}
+
+.nome, .matricula {
+    display: flex;
+    gap: 1rem;
+}
+.matricula {
+    padding-top: 1.6rem;
+}
+
+p {
+    font-family: var(--inter);
+    font-size: 1.4rem;
+}
+
+a {
+    color: var(--white);
+    border-radius: 0.5rem;
+    width: 23.8rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+
+    font-family: var(--jost);
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.button {
+    cursor: pointer;
+}
+
+.closeHome {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: red;
+    color: var(--white);
+    margin-top: 4rem;
+    cursor: pointer;
+
+    font-family: var(--jost);
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.buttonsHeader {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.buttonsHeader button {
+    background: var(--blue-200);
+    color: var(--white);
+    width: 15rem;
+    padding: 2rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+.buttonsHeader button:hover{
+    background: var(--blue-300);
+}
