@@ -119,11 +119,11 @@ body {
 
 /* div descricao */
 .dashbordItens #descricao {
-    width: 29rem;
+    width: 35rem;
     margin-left: -4rem;
 }
 .dashbordItens #descricao p {
-    width: 20rem;
+    width: 35rem;
 }
 
 /* div idDocumento */

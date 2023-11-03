@@ -4,7 +4,7 @@ const logo = resolve(__dirname, '../', 'public', 'logo.png')
 
 function createWindow() {
     const win = new BrowserWindow({
-        width: 1200,
+        width: 1400,
         height: 820,
         resizable: false,
         icon: logo,

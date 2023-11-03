@@ -30,6 +30,11 @@ codigoAtividade.addEventListener('keydown', async (event) => {
                 descricao.classList.add('readonly')
             });
 
+            const status = response.status()
+
+            if(status == 201) {
+                location.reload()
+            }
         }catch(err){
             console.error('erro interno')
         }
