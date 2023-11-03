@@ -126,11 +126,16 @@ a {
 .dashbordLista {
     display: flex;
     justify-content: space-between;
-    width: 90%;
-    height: 70%;
+    width: 70%;
+    height: 90%;
+    position: absolute;
     background: #F6F6F6;
     border-radius: 0.5rem;
     overflow-y: auto;
+}
+
+.dashbordLista #setor {
+    margin-left: -7rem;
 }
 
 .dashbordLista div {
@@ -144,6 +149,9 @@ a {
 
 .dashbordLista div h2 {
     font-family: var(--roboto);
+}
+.dashbordLista div p {
+    font-size: 1.1rem;
 }
 
 #criarTarefaForms {
