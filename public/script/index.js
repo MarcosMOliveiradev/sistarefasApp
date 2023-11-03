@@ -37,7 +37,7 @@ async function login(){
             localStorage.setItem('token', token)
             window.location.href = './routes/home/index.html'
         } else {
-            alert('Loguin ou senha invalido', response.status, response.text)
+            // alert('Loguin ou senha invalido', response.status, response.text)
           }
 
     } catch(err) {

@@ -12,7 +12,7 @@ function criarTarefas(){
         const codigo = parseInt(codigoForms)
 
         if(codigo == NaN || setor == "" || descricao == "") {
-            alert("Todos os campos devem ser preenchidos")
+            // alert("Todos os campos devem ser preenchidos")
             throw new Error("Todos os campos devem ser preenchidos")
         }
         
@@ -31,8 +31,6 @@ function criarTarefas(){
             const resposta = await response.json()
             
             if(status == 201){
-                alert(resposta)
-
                 location.reload()
             }
         }catch(err){

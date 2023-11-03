@@ -64,9 +64,9 @@ function criarAtividade(){
             })
 
             if(response.ok) {
-                alert('atividade criada')
+               // alert('atividade criada')
             } else {
-                alert(response.status, response.text)
+               // alert(response.status, response.text)
             }
         }catch(err){
             console.error(err)

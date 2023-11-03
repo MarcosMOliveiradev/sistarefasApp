@@ -23,13 +23,13 @@ pesquisar.addEventListener('click', async () => {
     const formattedDateInicial = incrementarUmDia(dataI)
 
     if(formattedDateInicial === "NaN/NaN/NaN" || formattedDateInicial === "") {
-        alert('O campo data não pode estar vazio')
+       // alert('O campo data não pode estar vazio')
         throw new Error('Campo data está vazio!');
     }
 
     const token = localStorage.getItem('token')
     if(token == null) {
-        alert('Você não esta altenticado para essa rota!')
+       // alert('Você não esta altenticado para essa rota!')
         window.location.href = '../../index.html'
     }
     try {

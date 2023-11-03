@@ -19,12 +19,13 @@ enviar.addEventListener('click', async () => {
     
     const matricula = await parseInt(matriculaF)
     if(nome === '' || matricula === '' || password === '' || confSenha  === '' || permissionForm === '')  {
-        alert('Preencha todos os camposo')
+        //alert('Preencha todos os camposo')
         throw new Error('Preencha todos os campos')
     }
 
     if(password != confSenha){
-        alert('Senha e Confirmar senha precisam ser iguais')
+        //alert('Senha e Confirmar senha precisam ser iguais')
+        throw new Error('as senhas devem ser iguais')
     }
 
     let permission = await permissionForm === 'true' ? true : false
@@ -41,14 +42,14 @@ enviar.addEventListener('click', async () => {
         })
 
         if(response.ok) {
-            alert('Usuario Criando')
+            //alert('Usuario Criando')
             window.location.href = '../home/index.html'
         } else {
-            alert('Loguin ou senha invalido', response.status, response.text)
+           // alert('Loguin ou senha invalido', response.status, response.text)
           }
 
     } catch(err) {
-        alert('Algo deu errado', err)
+        //alert('Algo deu errado', err)
         console.error('Erro ao fazer login', err)
     }
 })
@@ -61,7 +62,7 @@ home.addEventListener('click', () => {
 
 
 if(token == null) {
-    alert('Você não esta altenticado para essa rota!')
+    //alert('Você não esta altenticado para essa rota!')
     window.location.href = '../../index.html'
 }
 // decodifica o token

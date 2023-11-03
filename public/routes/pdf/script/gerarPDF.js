@@ -15,7 +15,7 @@ export async function gerarPDF(){
           ).padStart(2, "0")}-${data.getFullYear()}`;
     
         if(formattedDate === "NaN-NaN-NaN" || formattedDate === "") {
-            alert('O campo data não pode estar vazio')
+           // alert('O campo data não pode estar vazio')
             throw new Error('Campo data está vazio!');
         }
 
