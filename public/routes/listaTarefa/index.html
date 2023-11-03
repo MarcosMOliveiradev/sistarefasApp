@@ -48,12 +48,50 @@
             <div class="buttonsHeader">
                 <button id="diario">Relatório Diário</button>
                 <button id="mensal">Relatório Mensal</button>
-                <button id="listaCodigo">Lista de Código</button>
+                <button id="criarTarefa">Criar Tarefa</button>
+            </div>
+
+            <div class="dashbordLista" id="dashbordLista">
+                <div id="codigo">
+                    <h2>Código</h2>
+                </div>
+
+                <div id="setor">
+                    <h2>Setor</h2>
+                </div>
+
+                <div id="descricao">
+                    <h2>Descrição</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="close" id="criarTarefaForms">
+        <div id="caixaForms">
+            <button id="buttonClose">X</button>
+            <h2>Cadastro de tarefas</h2>
+            <div id="forms">
+                <div>
+                    <label for="codigo">Código da tarefa</label>
+                    <input type="number" id="codigoForms">
+                </div>
+                <div>
+                    <label for="setor">Setor da tarefa</label>
+                    <input type="text" id="setorForms">
+                </div>
+                <div>
+                    <label for="descricaoForm">Descrição da tarefa</label>
+                    <input type="text" id="descricaoForm">
+                </div>
+
+                <button id="enviar">enviar</button>
             </div>
         </div>
     </div>
 
     <script type="module" src="./script/index.js" async defer></script>
     <script type="module" src="./script/dados.js" async defer></script>
+    <script type="module" src="./script/criarTarefa.js" async defer></script>
 </body>
 </html>

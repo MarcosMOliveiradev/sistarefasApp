@@ -40,3 +40,27 @@ function relatorioMensal() {
 }
 
 relatorioMensal()
+
+function openModal(){
+    const criarTarefa = document.getElementById('criarTarefa')
+
+    criarTarefa.addEventListener('click', () => {
+        const model = document.getElementById('criarTarefaForms')
+
+        model.classList.remove('close')
+    })
+}
+
+openModal()
+
+function closeModal(){
+    const close = document.getElementById('buttonClose')
+
+    close.addEventListener('click', () => {
+        const model = document.getElementById('criarTarefaForms')
+
+        model.classList.add('close')
+    })
+}
+
+closeModal()

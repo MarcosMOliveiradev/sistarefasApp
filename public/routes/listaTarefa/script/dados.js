@@ -1,6 +1,8 @@
 import { ENV_API } from "../../../env.js"
+import { codigo, descricao, setor } from "./lista.js"
 
 window.onload = async function listatarefa(){
+    let dados
     const token = localStorage.getItem('token')
     try{
         let api = ENV_API
@@ -13,10 +15,18 @@ window.onload = async function listatarefa(){
             }
         })
 
-        console.log(response.json())
+        dados = await response.json()
     }catch(err){
         console.log(err)
     }
+
+    const coodigoHtml = document.getElementById('codigo')
+    const setorHtml = document.getElementById('setor')
+    const descricaoHtml = document.getElementById('descricao')
+
+    codigo(dados, coodigoHtml)
+    setor(dados, setorHtml)
+    descricao(dados, descricaoHtml)
 
     // TODO: criar botão para criação de tarefas, personalizar para que o botão so seja visivel para adm
 }
