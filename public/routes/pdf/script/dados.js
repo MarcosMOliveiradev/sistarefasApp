@@ -25,9 +25,17 @@ pesquisar.addEventListener('click', async () => {
     const filter = document.getElementById('filtro').value
 
     const data = new Date(dataPesquisa)
-    const formattedDate = `${String(data.getDate() + 1).padStart(2, "0")}-${String(
+
+    data.setDate(data.getDate() + 1)
+    if (data.getDate() === 1) {
+    data.setMonth(data.getMonth());
+    }
+
+    const formattedDate = `${String(data.getDate()).padStart(2, "0")}-${String(
         data.getMonth() + 1
       ).padStart(2, "0")}-${data.getFullYear()}`;
+
+      console.log(formattedDate)
 
     if(formattedDate === "NaN/NaN/NaN" || formattedDate === "") {
        // alert('O campo data não pode estar vazio')

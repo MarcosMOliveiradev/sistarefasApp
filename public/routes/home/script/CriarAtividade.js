@@ -68,6 +68,12 @@ function criarAtividade(){
                 body: JSON.stringify({data, index, codigoTarefa, idDocumento, quantidadeFolhas, horaInicio, horaTermino})
             })
 
+            const status = response.status
+
+            if(status == 201) {
+                location.reload()
+            }
+
             if(response.ok) {
                // alert('atividade criada')
             } else {
