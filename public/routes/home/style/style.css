@@ -169,10 +169,12 @@ a {
 
 .dashbordItens {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 2rem;
     margin-top: 3.8rem;
     background: var(--blue-100);
-    width: 80%;
+    width: 75%;
+    max-width: 90%;
     height: 45rem;
     max-height: 50rem;
     overflow-y: auto;
@@ -182,6 +184,7 @@ a {
 
 .dashbordItens div {
     display: flex;
+    gap: 2rem;
     flex-direction: column;
     align-items: center;
     padding-top: 4rem;
@@ -190,92 +193,32 @@ a {
 
 .dashbordItens div p {
     font-size: 1.1rem;
-}
-/* div data */
-.dashbordItens #data {
-    width: 10rem;
-}
-.dashbordItens #data p {
-    width: 10rem;
+    text-align: center;
 }
 
 /* div item */
 .dashbordItens #item {
-    width: 2rem;
     display: flex;
     align-items: center;
 }
 .dashbordItens #item p {
-    width: 8rem;
+    width: 6rem;
 }
 
-/* div codigo */
-.dashbordItens #codigo {
-    width: 2rem;
-    margin-left: 3rem;
-
-}
 .dashbordItens #codigo p {
-    width: 9rem;
+    width: 6rem;
 }
 
-/* div setor */
-.dashbordItens #setor {
-    width: 10rem;
-    margin-left: 1rem;
-}
-.dashbordItens #setor p {
-    width: 10rem;
-}
-
-/* div descricao */
-.dashbordItens #descricao {
-    width: 40rem;
-    margin-left: -11rem;
-}
 .dashbordItens #descricao p {
-    width: 40rem;
+    width: 25rem;
 }
 
-/* div idDocumento */
-.dashbordItens #idDocumento {
-    width: 9rem;
-    margin-top: -1.8rem;
-    text-align: center;
-    margin-left: -9rem;
-}
 .dashbordItens #idDocumento p {
-    width: 10rem;
+    width: 6rem;
 }
 
-/* div quantidade de folha */
-.dashbordItens #qtdFolja {
-    width: 7rem;
-    margin-top: -1.8rem;
-    text-align: center;
-}
 .dashbordItens #qtdFolja p {
-    width: 10rem;
-}
-
-/* div inicio */
-.dashbordItens #inicio {
-    width: 7rem;
-    margin-top: -1.8rem;
-    text-align: center;
-}
-.dashbordItens #inicio p {
-    width: 10rem;
-}
-
-/* div termino */
-.dashbordItens #termino {
-    width: 8rem;
-    margin-top: -1.8rem;
-    text-align: center;
-}
-.dashbordItens #termino p {
-    width: 10rem;
+    width: 6rem;
 }
 
 .dashbordItens div h2 {
