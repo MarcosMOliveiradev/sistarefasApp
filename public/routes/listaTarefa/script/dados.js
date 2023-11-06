@@ -27,6 +27,4 @@ window.onload = async function listatarefa(){
     codigo(dados, coodigoHtml)
     setor(dados, setorHtml)
     descricao(dados, descricaoHtml)
-
-    // TODO: criar botão para criação de tarefas, personalizar para que o botão so seja visivel para adm
 }
