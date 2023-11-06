@@ -4,6 +4,7 @@ html {
 }
 
 .container {
+    position: absolute;
     width: 98vw;
     height: 50vw;
     display: grid;

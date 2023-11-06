@@ -28,8 +28,8 @@ matriculaU.innerHTML = payload.matricula
 // Leva para a pagina de criar usuario
 function createUser(){
     const create = document.getElementById('criarUser')
-
-    create.addEventListener('click', async () => {
+    
+    create.addEventListener('click', () => {
         if(payload.permission == true) {
             window.location.href = '../createUser/create-user.html'
         }

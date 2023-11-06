@@ -11,12 +11,17 @@ import {
     HoraInicioAPI,
     HoraTerminoAPI 
     } from './Data.js';
+import { responseModal } from '../../../scriptModel/response.js';
 
 const pesquisar = document.getElementById('pesquisar')
 
 const token = localStorage.getItem('token')
 if(token == null) {
-   // alert('Você não esta altenticado para essa rota!')
+    const titulo = "Eu não te conheço"
+    const description = "Você não esta autenticado para utilizar essa pagina, favor faça login."
+
+    const semToken = await responseModal(titulo, description)
+    document.body.appendChild(semToken)
     window.location.href = '../../index.html'
 }
 

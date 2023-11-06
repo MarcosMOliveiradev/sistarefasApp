@@ -1,4 +1,5 @@
 import { ENV_API } from '../env.js';
+import { responseModal } from '../scriptModel/response.js';
 
 const buttonEnviar = document.getElementById('entrar');
 const enter = document.getElementById('password')
@@ -17,7 +18,13 @@ async function login(){
     const matriculaF = document.getElementById('matricula').value
     const password = document.getElementById('password').value
 
-    if(password.length < 0){
+    if(matriculaF == "" && password == ""){
+        const titulo = "Preencha todos os campos"
+        const description = "Matricula e senha precisam estar preenchidas"
+
+        const matriculaESenhaVazios = await responseModal(titulo, description)
+
+        document.body.appendChild(matriculaESenhaVazios)
         throw new Error('senha ou login invalido')
     }
 
@@ -38,9 +45,20 @@ async function login(){
             window.location.href = './routes/home/index.html'
         } else {
             // alert('Loguin ou senha invalido', response.status, response.text)
+            if(response.status === 409) {
+                console.log("chegou")
+                const titulo = "Erro ao logar"
+                const description = "Loguin ou senha invalido"
+                const modal = await responseModal(titulo, description)
+                document.body.appendChild(modal)
+            }
+            
           }
 
     } catch(err) {
+        const titulo = "Internal Server Error"
+        const internalErr = await responseModal(titulo, err)
+        document.body.appendChild(internalErr)
         console.error('Erro ao fazer login', err)
     }
 }

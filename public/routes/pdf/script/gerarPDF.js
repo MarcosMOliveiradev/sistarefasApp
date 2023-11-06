@@ -1,3 +1,4 @@
+import { responseModal } from "../../../scriptModel/response.js";
 
 export async function gerarPDF(){
     const token = localStorage.getItem('token')
@@ -15,7 +16,11 @@ export async function gerarPDF(){
           ).padStart(2, "0")}-${data.getFullYear()}`;
     
         if(formattedDate === "NaN-NaN-NaN" || formattedDate === "") {
-           // alert('O campo data não pode estar vazio')
+            const titulo = "Preencha todos os campos"
+            const description = "O campo data precisa estar preenchido"
+            const dataVazia = await responseModal(titulo, description)
+
+            document.body.appendChild(dataVazia)
             throw new Error('Campo data está vazio!');
         }
 

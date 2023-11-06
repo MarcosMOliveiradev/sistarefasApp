@@ -1,4 +1,5 @@
 import { ENV_API } from "../../../env.js"
+import { responseModal } from "../../../scriptModel/response.js"
 const token = localStorage.getItem('token')
 
 function criarTarefas(){
@@ -13,6 +14,11 @@ function criarTarefas(){
 
         if(codigo == NaN || setor == "" || descricao == "") {
             // alert("Todos os campos devem ser preenchidos")
+            const titulo = "Preencha todos os campos"
+            const description = "Todos os campos devem ser preenchidos antes de ser registrados"
+
+            const listaVazia = await responseModal(titulo, description)
+            document.body.appendChild(listaVazia)
             throw new Error("Todos os campos devem ser preenchidos")
         }
         

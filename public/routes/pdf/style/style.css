@@ -4,6 +4,7 @@ body {
 }
 #formularioGeral{
     width: 98vw;
+    position: absolute;
 }
 #relatorioPDF{
     display: flex;
@@ -191,6 +192,7 @@ body {
     color: var(--white);
     top: 7rem;
     position: absolute;
+    z-index: 80;
     margin-left: 4rem;
     width: 15rem;
     height: 4.8rem;
@@ -207,6 +209,7 @@ body {
     color: var(--white);
     top: 13rem;
     position: absolute;
+    z-index: 90;
     margin-left: 4rem;
     width: 15rem;
     height: 4.8rem;
@@ -232,6 +235,7 @@ body {
     display: flex;
     align-items: center;
     position: absolute;
+    z-index: 85;
     top: 6rem;
     left: 20rem;
 }

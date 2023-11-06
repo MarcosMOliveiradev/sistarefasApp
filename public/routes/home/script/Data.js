@@ -27,6 +27,7 @@ export function ItemAPI(API, html) {
         paragrafo = paragrafoAnterior
     }
 
+    console.log(API)
     API.forEach((objeto) => {
         const paragrafo = document.createElement("p")
 

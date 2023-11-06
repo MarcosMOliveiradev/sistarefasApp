@@ -8,6 +8,15 @@
     margin-top: 10rem;
 }
 
+.loginContainer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
 .texto {
     display: flex;
     justify-content: center;

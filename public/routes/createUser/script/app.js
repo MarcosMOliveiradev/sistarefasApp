@@ -1,4 +1,5 @@
 import { ENV_API } from "../../../env.js"
+import { responseModal } from "../../../scriptModel/response.js"
 
 const enviar = document.getElementById('submit')
 const token = localStorage.getItem('token')
@@ -13,7 +14,11 @@ enviar.addEventListener('click', async () => {
     const verifica = password.split("")
 
     if (verifica.length < 6 ) {
-        alert("A senha precisa ter mais de 6 caracteres")
+        // Cria modal de erro
+        const titulo = "Senha invalida"
+        const description = "A senha precisa ter mais de 6 caracteres"
+        const modal = await responseModal(titulo, description)
+        document.body.appendChild(modal)
         throw new Error("A senha precisa ter mais de 6 caracteres")
     }
     
@@ -25,6 +30,10 @@ enviar.addEventListener('click', async () => {
 
     if(password != confSenha){
         //alert('Senha e Confirmar senha precisam ser iguais')
+        const titulo = "Senha incorreta"
+        const description = "As senhas precisam estar iguais"
+        const differentPassowrd = await responseModal(titulo, description)
+        document.body.appendChild(differentPassowrd)
         throw new Error('as senhas devem ser iguais')
     }
 
