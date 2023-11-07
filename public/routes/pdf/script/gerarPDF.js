@@ -28,7 +28,7 @@ export async function gerarPDF(){
 
         const option = {
             margin: 1,
-            filename: `${nome}.pdf`,
+            filename: `${nome}-${data.getHours()}.pdf`,
             image: { type: 'jpeg', quality: 1},
             pagebreak: { mode: ['avoid-all', 'css']},
             html2canvas:  { scale: 10 },
