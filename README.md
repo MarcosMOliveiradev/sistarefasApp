@@ -15,7 +15,7 @@ Demostrando um bom serviço e vontade de aprender, fui contratado para fazer par
 Em 2021 a coordenação do programa de jovem aprendiz da empresa (coordenação na qual eu faço parte de forma voluntaria) resolveu implementar um sistema parecido com a minha planilha de Excel, onde cada aprendiz colocaria quais atividades estavam fazendo e o tempo em que levavam em cada atividade. Inicialmente isso também seria uma planilha de Excel. Porém atualmente eu sou estudante de análise e desenvolvimento de sistemas, e na procura por adquirir experiencia resolvi desenvolver um sistema, com uma interface amigável e bem intuitiva.
 </br>
 </br>
-Agora no final de 2023, seis mês após ter começado o desenvolvimento, o sistema está sendo implementado, e pra mim é um orgulho ter conseguido tudo que eu consegui fazer.
+Agora no final de 2023, seis mês após ter começado o desenvolvimento, o sistema está sendo implementado, e para mim é um orgulho ter conseguido tudo que eu consegui fazer.
 </p>
 
 ### Foram utilizados nesse projeto
