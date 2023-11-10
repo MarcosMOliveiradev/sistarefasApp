@@ -15,8 +15,7 @@ import {
 
 const pesquisar = document.getElementById('pesquisar')
 
-const teste = await seDataVazia()
-console.log(teste)
+await seDataVazia()
 
 pesquisar.addEventListener('click', async () => {
     const dataPesquisa = document.getElementById('dataPesquisa').value

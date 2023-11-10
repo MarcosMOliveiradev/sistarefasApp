@@ -20,6 +20,14 @@ export async function responseModal(titulo, description){
         modal.className = "ModalOff"
     })
 
+    btn.focus()
+    
+    btn.addEventListener('keydown', (e) => {
+        if(e.keyCode === 13) {
+            modal.className = "ModalOff"
+        }
+    })
+
     aviso.appendChild(novoTitulo)
     aviso.appendChild(novaDecription)
     aviso.appendChild(btn)

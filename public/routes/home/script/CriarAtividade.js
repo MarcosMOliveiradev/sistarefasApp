@@ -1,5 +1,6 @@
 import { ENV_API } from "../../../env.js"
 import { responseModal } from "../../../scriptModel/response.js"
+import { focar } from "./focus.js"
 import { incrementarUmDia } from "./formatData.js"
 const token = localStorage.getItem('token')
 
@@ -8,6 +9,14 @@ const codigoAtividade = document.getElementById('codigoInsert')
 // busca o setor e a descrição da atividade
 codigoAtividade.addEventListener('keydown', async (event) => {
     if(event.keyCode === 13 || event.keyCode === 9) {
+        
+        if(codigoAtividade.value === ""){
+            let titulo = "Campo vazio"
+            let descricaoErro = 'O campo "Código Atividade" não pode estar vazio'
+            const codigoErro = await responseModal(titulo, descricaoErro)
+            document.body.appendChild(codigoErro)
+        }
+
         try{
             let Api = ENV_API
             const response = await fetch(`${Api}/tasck/codigo?codigoTarefa=${codigoAtividade.value}`, {
@@ -42,6 +51,7 @@ codigoAtividade.addEventListener('keydown', async (event) => {
     }
 })
 
+focar()
 function criarAtividade(){
     const enviar = document.getElementById('criarAtividadeButton')
 
