@@ -192,7 +192,7 @@ a {
 }
 
 .dashbordItens div p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-align: center;
 }
 
@@ -202,23 +202,23 @@ a {
     align-items: center;
 }
 .dashbordItens #item p {
-    width: 6rem;
+    width: 5rem;
 }
 
 .dashbordItens #codigo p {
-    width: 6rem;
+    width: 5rem;
 }
 
 .dashbordItens #descricao p {
-    width: 25rem;
+    width: 23rem;
 }
 
 .dashbordItens #idDocumento p {
-    width: 6rem;
+    width: 5rem;
 }
 
 .dashbordItens #qtdFolja p {
-    width: 6rem;
+    width: 5rem;
 }
 
 .dashbordItens div h2 {
