@@ -8,6 +8,9 @@ export async function gerarPDF(){
     const nome = payload.nome
     const gerarPdf = document.getElementById('gerarPDF')
 
+    const userName = document.getElementById('nome')
+    userName.textContent = nome
+    console.log(nome)
     gerarPdf.addEventListener('click', async () => {
         const dataPesquisa = document.getElementById('dataPesquisa').value
         const data = new Date(dataPesquisa)
@@ -31,7 +34,7 @@ export async function gerarPDF(){
             filename: `${nome}-${data.getHours()}.pdf`,
             image: { type: 'jpeg', quality: 1},
             pagebreak: { mode: ['avoid-all', 'css']},
-            html2canvas:  { scale: 10 },
+            html2canvas:  { scale: 5 },
             jsPDF:{ unit: 'mm', format: 'a4', orientation: 'landscape' }
         }
 

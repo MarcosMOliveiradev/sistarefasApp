@@ -1,4 +1,5 @@
 import { ENV_API } from "../../../env.js"
+import { responseModal } from "../../../scriptModel/response.js"
 import { incrementarUmDia } from "./formatData.js"
 const token = localStorage.getItem('token')
 
@@ -71,7 +72,10 @@ function criarAtividade(){
             const status = response.status
 
             if(status == 201) {
-                location.reload()
+                const titulo = "Criado com sucesso!"
+                const descricaoTarefa = "Sua atividade foi criada com sucesso"
+                const sucesso = await responseModal(titulo, descricaoTarefa)
+                document.body.appendChild(sucesso)
             }
 
             if(response.ok) {

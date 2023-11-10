@@ -66,108 +66,52 @@ body {
 
 .dashbordItens {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 3rem;
     border: 0.1rem solid;
-    width: 95%;
-    height: 45rem;
+    width: 98%;
+    height: 102%;
     border-radius: 1rem;
-    overflow-y: auto;
 }
 
 .dashbordItens div {
     display: flex;
+    gap: 2rem;
     flex-direction: column;
     align-items: center;
-    padding: 4rem;
+    padding-top: 4rem;
+    font-size: 1rem;
 }
-/* div data */
-.dashbordItens #data {
-    /* margin-left: 1rem; */
-    width: 10rem;
-}
-.dashbordItens #data p {
-    width: 5rem;
+
+.dashbordItens div p {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 /* div item */
 .dashbordItens #item {
-    width: 2rem;
     display: flex;
     align-items: center;
-    margin-left: -1rem;
 }
 .dashbordItens #item p {
-    width: 8rem;
+    width: 7rem;
 }
 
-/* div codigo */
-.dashbordItens #codigo {
-    width: 2rem;
-    margin-left: 1rem;
-
-}
 .dashbordItens #codigo p {
-    width: 9rem;
+    width: 7rem;
 }
 
-/* div setor */
-.dashbordItens #setor {
-    width: 10rem;
-}
-.dashbordItens #setor p {
-    width: 10rem;
-    margin-left: 1rem;
-}
-
-/* div descricao */
-.dashbordItens #descricao {
-    width: 35rem;
-    margin-left: -4rem;
-}
 .dashbordItens #descricao p {
-    width: 35rem;
+    width: 23rem;
 }
 
-/* div idDocumento */
-.dashbordItens #idDocumento {
-    width: 10rem;
-    margin-top: -1.8rem;
-    text-align: center;
-}
 .dashbordItens #idDocumento p {
-    width: 10rem;
+    width: 5rem;
 }
 
-/* div quantidade de folha */
-.dashbordItens #qtdFolja {
-    width: 15rem;
-    margin-top: -1.8rem;
-    text-align: center;
-}
 .dashbordItens #qtdFolja p {
-    width: 10rem;
-}
-
-/* div inicio */
-.dashbordItens #inicio {
-    width: 15rem;
-    margin-top: -1.8rem;
-    text-align: center;
-    margin-left: -3rem;
-}
-.dashbordItens #inicio p {
-    width: 10rem;
-}
-
-/* div termino */
-.dashbordItens #termino {
-    width: 17rem;
-    margin-top: -1.8rem;
-    text-align: center;
-    margin-left: -6rem;
-}
-.dashbordItens #termino p {
-    width: 10rem;
+    width: 7rem;
 }
 
 .dashbordItens div h2 {
@@ -177,7 +121,7 @@ body {
 }
 
 .dashbordItens div p {
-    margin-top: 2rem;
+    display: flex;
     padding-top: 1rem;
     border-top: 0.1rem solid var(--gray-300);
     display: flex;

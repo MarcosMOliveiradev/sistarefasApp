@@ -1,5 +1,4 @@
 import { ENV_API } from '../../../env.js';
-import { seDataVazia } from './teste.js'
 
 import {
     DataAPI,
@@ -13,35 +12,20 @@ import {
     HoraTerminoAPI 
     } from './Data.js';
 
-const pesquisar = document.getElementById('pesquisar')
-
-const teste = await seDataVazia()
-console.log(teste)
-
-pesquisar.addEventListener('click', async () => {
-    const dataPesquisa = document.getElementById('dataPesquisa').value
-    const data = new Date(dataPesquisa)
+export async function seDataVazia(){
+    const token = localStorage.getItem('token')
+    const data = new Date()
     
-    data.setDate(data.getDate() + 1)
+    data.setDate(data.getDate())
     if (data.getDate() === 1) {
     data.setMonth(data.getMonth());
     }
 
     const formattedDate = `${String(data.getDate()).padStart(2, "0")}-${String(
         data.getMonth() + 1
-      ).padStart(2, "0")}-${data.getFullYear()}`;
+      ).padStart(2, "0")}-${data.getFullYear()}`
 
-    if(formattedDate === "NaN/NaN/NaN" || formattedDate === "" || formattedDate === "NaN-NaN-NaN") {
-        //alert('O campo data não pode estar vazio')
-        throw new Error('Campo data está vazio!');
-    }
-
-    const token = localStorage.getItem('token')
-    if(token == null) {
-        //alert('Você não esta altenticado para essa rota!')
-        window.location.href = '../../index.html'
-    }
-    try {
+      try {
         let Api = ENV_API
         const response = await fetch(`${Api}/atividade/data?data=${formattedDate}`, {
             method: 'GET',
@@ -72,8 +56,7 @@ pesquisar.addEventListener('click', async () => {
         QtdFolhaAPI(API, qtdFoljaHtml)
         HoraInicioAPI(API, inicioHtml)
         HoraTerminoAPI(API, terminoHtml)
-
-    } catch(err) {
+    }catch(err) {
         console.error('Error', err)
     }
-})
+}
