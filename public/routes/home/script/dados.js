@@ -1,5 +1,5 @@
 import { ENV_API } from '../../../env.js';
-import { seDataVazia } from './teste.js'
+import { seDataVazia } from './seDataVazia.js'
 
 import {
     DataAPI,
