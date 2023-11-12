@@ -7,7 +7,7 @@ html {
     position: absolute;
     z-index: 1;
     width: 98vw;
-    height: 50vw;
+    height: 48vw;
     display: grid;
     column-gap: 2rem;
     grid-template-columns: 25rem 0.3rem 1fr auto;
@@ -116,7 +116,6 @@ a {
     align-items: center;
     background: red;
     color: var(--white);
-    margin-top: 4rem;
     cursor: pointer;
 
     font-family: var(--jost);
@@ -170,12 +169,12 @@ a {
 .dashbordItens {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
     margin-top: 3.8rem;
     background: var(--blue-100);
     width: 75%;
     max-width: 90%;
-    height: 45rem;
+    height: 40rem;
     max-height: 50rem;
     overflow-y: auto;
     border-radius: 1rem;
@@ -226,7 +225,18 @@ a {
     justify-content: center;
     font-family: var(--roboto);
 }
-
+.dashbordItens div button {
+    width: 2rem;
+    background: var(--blue-100);
+}
+.dashbordItens div button img {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    width: 2rem;
+    border-top: 0.1rem solid var(--gray-300);
+}
 .dashbordItens div p {
     margin-bottom: 2rem;
     padding-top: 1rem;

@@ -10,8 +10,10 @@ import {
     IdDocAPI,
     QtdFolhaAPI,
     HoraInicioAPI,
-    HoraTerminoAPI 
+    HoraTerminoAPI, 
+    editarFormulario
     } from './Data.js';
+import { editarAtividade } from './editarAtividade.js';
 
 const pesquisar = document.getElementById('pesquisar')
 
@@ -40,6 +42,7 @@ pesquisar.addEventListener('click', async () => {
         //alert('Você não esta altenticado para essa rota!')
         window.location.href = '../../index.html'
     }
+  
     try {
         let Api = ENV_API
         const response = await fetch(`${Api}/atividade/data?data=${formattedDate}`, {
@@ -61,6 +64,7 @@ pesquisar.addEventListener('click', async () => {
         let qtdFoljaHtml = document.getElementById('qtdFolja')
         let inicioHtml = document.getElementById('inicio')
         let terminoHtml = document.getElementById('termino')
+        let editarImg = document.getElementById('editar')
 
         DataAPI(API, dataHtml)
         CodigoAPI(API, codigoHtml)
@@ -71,7 +75,10 @@ pesquisar.addEventListener('click', async () => {
         QtdFolhaAPI(API, qtdFoljaHtml)
         HoraInicioAPI(API, inicioHtml)
         HoraTerminoAPI(API, terminoHtml)
+        editarFormulario(API, editarImg)
 
+        editarAtividade()
+        
     } catch(err) {
         console.error('Error', err)
     }

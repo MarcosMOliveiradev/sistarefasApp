@@ -176,3 +176,29 @@ export function HoraTerminoAPI(API, html) {
         return html.appendChild(paragrafo)
     })
 }
+
+export function editarFormulario(API, html){
+    const h2 = html.querySelector("h2")
+
+    let editiImg = html.lastChild
+    while(editiImg && editiImg != h2) {
+        const imgAnterior = editiImg.previousSibling
+        html.removeChild(editiImg)
+        editiImg = imgAnterior
+    }
+
+    let nameBottao = 0
+    API.forEach((objeto) => {
+        const botao = document.createElement('button')
+        const editiImg = document.createElement('img')
+        editiImg.src = "../../editar.svg"
+        botao.value = objeto.id
+        botao.name = nameBottao
+        editiImg.alt = "Editar"
+
+        botao.appendChild(editiImg)
+        nameBottao++
+
+        return html.appendChild(botao)
+    })
+}
