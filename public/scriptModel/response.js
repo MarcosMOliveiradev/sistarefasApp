@@ -13,6 +13,7 @@ export async function responseModal(titulo, description){
 
     const btn = document.createElement("button")
     btn.className = "buttonModel"
+    btn.id = "ok"
 
     btn.textContent = "OK"
 
@@ -28,6 +29,7 @@ export async function responseModal(titulo, description){
         }
     })
 
+    
     aviso.appendChild(novoTitulo)
     aviso.appendChild(novaDecription)
     aviso.appendChild(btn)

@@ -39,7 +39,6 @@ pesquisar.addEventListener('click', async () => {
 
     const token = localStorage.getItem('token')
     if(token == null) {
-        //alert('Você não esta altenticado para essa rota!')
         window.location.href = '../../index.html'
     }
   

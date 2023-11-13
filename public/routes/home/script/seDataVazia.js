@@ -9,8 +9,10 @@ import {
     IdDocAPI,
     QtdFolhaAPI,
     HoraInicioAPI,
-    HoraTerminoAPI 
+    HoraTerminoAPI, 
+    editarFormulario
     } from './Data.js';
+import { editarAtividade } from './editarAtividade.js';
 
 export async function seDataVazia(){
     const token = localStorage.getItem('token')
@@ -46,6 +48,7 @@ export async function seDataVazia(){
         let qtdFoljaHtml = document.getElementById('qtdFolja')
         let inicioHtml = document.getElementById('inicio')
         let terminoHtml = document.getElementById('termino')
+        let editarImg = document.getElementById('editar')
 
         DataAPI(API, dataHtml)
         CodigoAPI(API, codigoHtml)
@@ -56,6 +59,10 @@ export async function seDataVazia(){
         QtdFolhaAPI(API, qtdFoljaHtml)
         HoraInicioAPI(API, inicioHtml)
         HoraTerminoAPI(API, terminoHtml)
+        editarFormulario(API, editarImg)
+
+
+        editarAtividade()
     }catch(err) {
         console.error('Error', err)
     }

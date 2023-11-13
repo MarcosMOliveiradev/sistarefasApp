@@ -5,7 +5,7 @@
   "main": "./electron/main.js",
   "scripts": {
     "electron": "electron .",
-    "build": "npx electron-packager . --icon publi/logo.png --out=packages"
+    "build": "npx electron-packager . --icon=./publi/logo.ico --out=packages"
   },
   "keywords": [],
   "author": "",

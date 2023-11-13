@@ -20,11 +20,11 @@ codigoAtividade.addEventListener('keydown', async (event) => {
         try{
             let Api = ENV_API
             const response = await fetch(`${Api}/tasck/codigo?codigoTarefa=${codigoAtividade.value}`, {
-            method: 'GET',
-            headers: {
-                'Content-Type': 'application/json',
-                'Authorization': `Bearer ${token}`
-            }
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${token}`
+                }
             })
 
             const responseAPI = await response.json()
