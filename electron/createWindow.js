@@ -6,7 +6,6 @@ function createWindow() {
     const win = new BrowserWindow({
         width: 1400,
         height: 820,
-        resizable: false,
         icon: logo,
         webPreferences: {
           contentSecurityPolicy: "default-src 'self';"
