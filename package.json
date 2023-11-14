@@ -2,10 +2,11 @@
   "name": "sistarefas",
   "version": "0.0.13",
   "description": "",
+  "icon": "logo.ico",
   "main": "./electron/main.js",
   "scripts": {
     "electron": "electron .",
-    "build": "npx electron-packager . --icon=./publi/logo.ico --out=packages"
+    "build": "npx electron-packager . --icon=logo.ico --out=packages"
   },
   "keywords": [],
   "author": "",
