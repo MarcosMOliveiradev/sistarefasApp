@@ -57,14 +57,12 @@ function criarAtividade(){
 
     enviar.addEventListener('click', async () => {
         const dataf = document.getElementById('dateInsart').value
-        const indexf = document.getElementById('itemInsert').value
         const codigoTarefaf = document.getElementById('codigoInsert').value
         const idDocumento = document.getElementById('idInsert').value
         const quantidadeFolhas = document.getElementById('QTDFolhaInsert').value
         const horaInicio = document.getElementById('horaInicialInsert').value
         const horaTermino = document.getElementById('horaTerminoInsert').value
 
-        const index = await parseInt(indexf)
         const codigoTarefa = await parseInt(codigoTarefaf)
         const data = await incrementarUmDia(dataf)
 
@@ -76,7 +74,7 @@ function criarAtividade(){
                     'Content-Type': 'application/json',
                     'Authorization': `Bearer ${token}`
                 },
-                body: JSON.stringify({data, index, codigoTarefa, idDocumento, quantidadeFolhas, horaInicio, horaTermino})
+                body: JSON.stringify({data, codigoTarefa, idDocumento, quantidadeFolhas, horaInicio, horaTermino})
             })
 
             const status = response.status

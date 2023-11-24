@@ -42,17 +42,18 @@ export async function editarAtividade(){
                     
                     salvarAtualizacao.addEventListener('click', async () => {
                         const data = document.getElementById('input0').value
-                        const indexForms = document.getElementById('input1').value
                         const codigoForms = document.getElementById('input2').value
                         const idDocumento = document.getElementById('input5').value
                         const quantidadeFolhas = document.getElementById('input6').value
                         const horaInicio = document.getElementById('input7').value
                         const horaTermino = document.getElementById('input8').value
-                
-                    const codigoTarefa = await parseInt(codigoForms)
-                    const index = await parseInt(indexForms)
 
-                    console.log(codigoTarefa)
+                        let codigoTarefa = undefined
+
+                        if (codigoForms !== '') {
+                            codigoTarefa = await parseInt(codigoForms)
+                        }
+
                         try{
 
                             let api = ENV_API
@@ -93,13 +94,6 @@ export async function editarAtividade(){
                 
                 codigoAtualizarAtividade.addEventListener('keydown', async (e) => {
                     if(e.keyCode === 13 || e.keyCode === 9) {
-                        if(codigoAtualizarAtividade.value === ""){
-                            let titulo = "Campo vazio"
-                            let descricaoErro = 'O campo "Código Atividade" não pode estar vazio'
-                            const codigoErro = await responseModal(titulo, descricaoErro)
-                            document.body.appendChild(codigoErro)
-                        }
-
                         try{
                             let api = ENV_API
                             const response = await fetch(`${api}/tasck/codigo?codigoTarefa=${codigoAtualizarAtividade.value}`, {
