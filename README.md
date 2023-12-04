@@ -1,28 +1,29 @@
-<h1 align="center">Projeto Sistarefas</h1>
+<h1>Projeto Sistarefas: Uma Jornada de Desenvolvimento Pessoal e Profissional</h1>
+<p>O projeto Sistarefas é um sistema de controle de atividades projetado para medir o desempenho dos jovens aprendizes, acompanhando as atividades realizadas e o tempo dedicado a cada uma. Este repositório é uma extensão do Projeto Sistarefas, abrangendo a parte da API e do banco de dados.
+</br>
+</br>
+Antes de adentrarmos nos detalhes técnicos do projeto, é importante compartilhar a motivação por trás dessa iniciativa. Em 2019, minha experiência como jovem aprendiz em um setor administrativo despertou meu interesse em medir e analisar as atividades realizadas. Ao inserir manualmente os pedidos de compras em uma planilha de Excel, percebi a necessidade de um sistema eficiente para acompanhar a produtividade.
+</br>
+</br>
+Demonstrando dedicação e interesse em aprender, fui posteriormente contratado para auxiliar o setor de informática. Foi nesse ambiente desafiador que descobri minha paixão por tecnologia da informação (TI). Ao enfrentar o desafio de criar um sistema de nuvem utilizando Nextcloud e uma linguagem de programação, superei minhas próprias expectativas e contribuí para a distribuição eficiente de documentos durante a pandemia.
+</br>
+</br>
+No ano seguinte, a coordenação do programa de jovem aprendiz decidiu implementar um sistema semelhante à minha planilha de Excel, visando aprimorar o controle das atividades dos aprendizes. Como estudante de análise e desenvolvimento de sistemas, vi uma oportunidade de adquirir experiência prática e decidi desenvolver um sistema completo. O resultado é o Projeto Sistarefas, uma aplicação com interface amigável e intuitiva.
+</br>
+</br>
+Ao final de 2023, após seis meses de desenvolvimento, o sistema está em fase de implementação. Sinto-me orgulhoso de tudo o que consegui realizar até agora. </p>
 
-<p>O projeto sistarefas consistem em um sistema de controle de atividades, seu intuito é medir quais atividades os jovens aprendizes mais têm feito, e o tempo em que levam em cada uma das atividades, esse repositório é uma extensão do repositório ProjetoSistarefas que seria a parte da API e do banco de dados.
-</br>
-</br>
-Antes de falar sobre a parte técnica do projeto, um pouco de porque resolvi desenvolver esse sistema.
-</br>
-</br>
-Em 2019 fui contratado pela empresa que estou atualmente para ser jovem aprendiz num setor administrativos, minha função na época era auxiliar o setor de compras da empresa, eu fui atribuído de inserir no sistema todos os pedidos de compras, na época não tínhamos nenhum sistema que medisse o quanto nós produzíamos, então fiz em uma planilha de Excel um pequeno controle das minhas atividades, em um ano medindo as minhas atividades, descobri que tinha feito cerca de mil ordens de compra, entre outras atividades.
-</br>
-</br>
-Demostrando um bom serviço e vontade de aprender, fui contratado para fazer parte do quadro de funcionários no final de 2020, dessa vez, meu desafio era auxiliar o setor de informática, descobri a paixão por TI ali quando fui desafiado a montar um sistema de nuvem utilizando o nextcloud e uma linguagem de programação, coisa na qual até ali eu achava que era impossível de eu conseguir, depois de muito sufoco, montei o sistema que auxiliou a empresa na distribuição de documentos durante a pandemia.
-</br>
-</br>
-Em 2021 a coordenação do programa de jovem aprendiz da empresa (coordenação na qual eu faço parte de forma voluntaria) resolveu implementar um sistema parecido com a minha planilha de Excel, onde cada aprendiz colocaria quais atividades estavam fazendo e o tempo em que levavam em cada atividade. Inicialmente isso também seria uma planilha de Excel. Porém atualmente eu sou estudante de análise e desenvolvimento de sistemas, e na procura por adquirir experiencia resolvi desenvolver um sistema, com uma interface amigável e bem intuitiva.
-</br>
-</br>
-Agora no final de 2023, seis mês após ter começado o desenvolvimento, o sistema está sendo implementado, e para mim é um orgulho ter conseguido tudo que eu consegui fazer.
-</p>
+### Tecnologias Utilizadas:
 
-### Foram utilizados nesse projeto
-- Electron
-- HTML
-- CSS
-- JavaScript
+•	Electron
+
+•	HTML
+
+•	CSS
+
+•	JavaScript
+
+<p>Este projeto representa não apenas uma solução eficiente para a empresa, mas também minha jornada de crescimento pessoal e profissional. Estou ansioso para ver como o Sistarefas 
 
 ### Para instalar e utilizar o sistema
 
