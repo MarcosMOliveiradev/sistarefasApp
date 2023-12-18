@@ -1,6 +1,6 @@
 {
   "name": "sistarefas",
-  "version": "0.0.14",
+  "version": "2.0.1",
   "description": "",
   "icon": "logo.ico",
   "main": "./electron/main.js",

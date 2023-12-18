@@ -1,0 +1,310 @@
+.container {
+    display: grid;
+    grid-template-columns: 27.5rem 1fr;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    background: #F5F8FF;
+    height: 95vh;
+    border-right: 1px #576790 solid;
+}
+
+.menu h1 {
+    padding-left: 1.7rem;
+    margin-top: 1.2rem;
+    font-family: var(--jost);
+    font-size: 3.2rem;
+    font-weight: 500;
+    border-bottom: 1px #576790 solid;
+}
+.menu h1 strong {
+    margin-top: 1.2rem;
+    font-family: var(--jost);
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.buttonMenu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5.5rem;
+    margin-left: 1.7rem;
+    gap: 1.9rem;
+}
+
+a{
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    font-family: var(--inter);
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.s1 {
+    border: 1px #576790 solid;
+    width: 10px;
+    transform: rotate(50deg);
+    cursor: pointer;
+}
+
+.s2{
+    border: 1px #576790 solid;
+    width: 10px;
+    cursor: pointer;
+    transform: rotate(-50deg) translate(-10px, -12px);
+}
+
+.perfil {
+    width: 23.8rem;
+    height: 26.5rem;
+    background: #fff;
+    margin-top: 9.1rem;
+    margin-left: 1.7rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: var(--inter);
+    font-size: 1.6rem;
+    font-weight: 500;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.perfil .userImage {
+    width: 10.3rem;
+    height: 10.3rem;
+    margin-bottom: 2.1rem;
+    border-radius: 50%;
+}
+
+.perfil p {
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+}
+
+.perfil .profileButton {
+    display: flex;
+    margin-top: 2.1rem;
+    gap: 2.1rem;
+}
+
+footer {
+    background: #131B31;
+    color: #fff;
+    height: 5vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: var(--jost);
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px #576790 solid;
+    height: 5.9rem;
+    padding-left: 2.1rem;
+    align-items: center;
+}
+
+.pesquisar input {
+    width: 29rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    background: #EFEFFC;
+}
+
+.pesquisar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.pesquisar button {
+    cursor: pointer;
+    width: 8.6rem;
+    height: 3.7rem;
+    background: #576790;
+    color: #fff;
+    border-radius: 0.5rem;
+}
+
+.click {
+    transform: rotate(178deg);
+}
+
+.selos {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-right: 6rem;
+}
+
+.selos p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    border: 1px #525252 solid;
+    font-family: var(--roboto);
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+.muralSection {
+    width: 95%;
+    height: 38.2rem;
+    background: #F6FBFF;
+
+    margin-left: 2.1rem;
+    margin-top: 2.1rem;
+    border-radius: 1rem;
+
+    padding-left: 3rem;
+    padding-top: 0.8rem;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.muralSection h2 {
+    font-family: var(--jost);
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+.dicasCarrocel {
+    width: 95%;
+    margin-left: 2.1rem;
+    margin-top: 2.5rem;
+    border-radius: 1rem;
+    height: 15.3rem;
+
+    background: #F6FBFF;
+
+    display: flex;
+    padding-left: 2.1rem;
+    align-items: center;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 1080px) {
+    .container {
+        display: grid;
+        grid-template-columns: 20rem 1fr;
+    }
+
+    .menu h1 {
+        padding-left: 1.7rem;
+        margin-top: 1.2rem;
+        font-family: var(--jost);
+        font-size: 2.8rem;
+        font-weight: 500;
+        border-bottom: 1px #576790 solid;
+    }
+
+    .menu h1 strong {
+        margin-top: 1.2rem;
+        font-family: var(--jost);
+        font-size: 3rem;
+        font-weight: 400;
+    }
+
+    .perfil {
+        width: 17rem;
+        height: 26.5rem;
+        background: #fff;
+        margin-top: 9.1rem;
+        margin-left: 1.7rem;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        font-family: var(--inter);
+        font-size: 1.6rem;
+        font-weight: 500;
+        border-radius: 1rem;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .muralSection h2 {
+        font-family: var(--jost);
+        font-weight: 400;
+        font-size: 2rem;
+    }
+
+    nav {
+        height: 5.6rem;
+    }
+
+    .dicasCarrocel img {
+        width: 70vw;
+    }
+}
+
+@media (max-width: 900px) {
+    .container {
+        grid-template-columns: 7.8rem auto;
+    }
+
+    .menu h1 strong {
+        display: none;
+    }
+
+    .buttonMenu a p {
+        display: none;
+    }
+
+    .perfil {
+        background: none;
+        box-shadow: none;
+        align-items: normal;
+    }
+
+    .perfil p {
+        display: none;
+    }
+
+    .perfil .userImage {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .perfil .profileButton {
+        flex-direction: column;
+    }
+
+    nav {
+        height: 5.4rem;
+    }
+
+    .pesquisar input {
+        width: 15rem;
+        height: 3rem;
+        border-radius: 0.5rem;
+        background: #EFEFFC;
+    }
+
+    .muralSection {
+        width: 85vw;
+    }
+
+    .dicasCarrocel {
+        width: 85vw;
+    }
+
+    .dicasCarrocel img {
+        width: 75vw;
+    }
+}

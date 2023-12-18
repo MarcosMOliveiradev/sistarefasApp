@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+}
+
+html {
+    --jost: 'Jost', sans-serif;
+    --inter: 'Inter', sans-serif;
+    --roboto: 'Roboto', sans-serif;
+
+    font-size: 62.5%;
+
+    --gray-100: #CECECE8A;
+    --gray-300: #525252;
+    --gray-500: #838383;
+    --gray-900: #525252;
+
+    --white: #fff;
+
+    --blue-100: #CAE2FC;
+    --blue-200: #65AFFF;
+    --blue-300: #007BFF;
+}
+
+.Modal {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 100;
+    background: var(--gray-100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aviso{
+    width: 50%;
+    height: 30%;
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    padding-top: 3rem;
+}
+
+.aviso h2 {
+    font-family: var(--jost);
+    font-size: 3rem;
+}
+
+.aviso p {
+    font-family: var(--roboto);
+    font-size: 1.5rem;
+    padding-top: 2rem;
+}
+
+.aviso .buttonModel {
+    margin-top: 5rem;
+    background: var(--blue-200);
+    color: var(--white);
+    width: 20rem;
+    padding: 2rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+.ModalOff {
+    position: absolute;
+    visibility: hidden;
+}
+
+
+.atualizarAtividadeModal {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 100;
+    background: var(--gray-100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.atualizarAtividadeAviso {
+    width: 60%;
+    height: 85%;
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    padding-top: 3rem;
+}
+
+.divForm {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 2rem;
+    width: 75%;
+}
+
+.divForm label {
+    display: flex;
+    align-items: end;
+    font-size: 1.5rem;
+    font-family: var(--inter);
+    color: black;
+}
+
+.divForm input {
+    max-width: 25rem;
+    max-height: 4.8rem;
+    width: 100%;
+    height: 100%;
+
+    padding: 2rem;
+    border-radius: 0.5rem;
+    border: 0.2rem solid var(--gray-300);
+}
+
+#salvarAtualização {
+    margin-top: 5rem;
+    background: var(--blue-200);
+    color: var(--white);
+    width: 20rem;
+    padding: 2rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+.closeAtividade {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: red;
+    margin-top: 2rem;
+    margin-left: 70rem;
+}
