@@ -41,6 +41,37 @@ a{
     font-family: var(--inter);
     font-size: 2rem;
     font-weight: 300;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #E99F49;
+    transition: 0.5s;
+}
+
+.relatorio{
+    height: 13rem;
+    width: 20rem;
+    background: #576790;
+
+    margin-left: -1rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    color: white;
+    border-radius: 1rem;
+}
+
+.listaRelatorio{
+    margin-top: 1rem;
+    padding-left: 2.5rem;
+}
+
+.listaRelatorio a {
+    margin-top: 1rem;
+}
+
+.close {
+    display: none;
 }
 
 .s1 {
@@ -48,6 +79,19 @@ a{
     width: 10px;
     transform: rotate(50deg);
     cursor: pointer;
+}
+
+.buttonList {
+    height: 9rem;
+    width: 15rem;
+    background: #576790;
+    color: white;
+
+    margin-top: 15rem;
+    margin-left: -10rem;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    border-radius: 1rem;
 }
 
 .s2{

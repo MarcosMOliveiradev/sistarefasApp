@@ -1,0 +1,195 @@
+.container {
+    display: grid;
+    grid-template-columns: 10rem 1fr;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    background: #F5F8FF;
+    height: 95vh;
+    border-right: 1px #576790 solid;
+}
+
+.menu h1 {
+    padding-left: 1.7rem;
+    margin-top: 1.2rem;
+    font-family: var(--jost);
+    font-size: 3.2rem;
+    font-weight: 500;
+    border-bottom: 1px #576790 solid;
+}
+.menu h1 strong {
+    margin-top: 1.2rem;
+    font-family: var(--jost);
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.buttonMenu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5.5rem;
+    margin-left: 1.7rem;
+    gap: 1.9rem;
+}
+
+a{
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    font-family: var(--inter);
+    font-size: 2rem;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #E99F49;
+    transition: 0.5s;
+}
+
+.relatorio{
+    height: 13rem;
+    width: 20rem;
+    background: #576790;
+
+    margin-left: -1rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    color: white;
+    border-radius: 1rem;
+}
+
+.listaRelatorio{
+    margin-top: 1rem;
+    padding-left: 2.5rem;
+}
+
+.listaRelatorio a {
+    margin-top: 1rem;
+}
+
+.close {
+    display: none;
+}
+
+.s1 {
+    border: 1px #576790 solid;
+    width: 10px;
+    transform: rotate(50deg);
+    cursor: pointer;
+}
+
+.buttonList {
+    height: 9rem;
+    width: 15rem;
+    background: #576790;
+    color: white;
+
+    margin-top: 15rem;
+    margin-left: -10rem;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    border-radius: 1rem;
+}
+
+.s2{
+    border: 1px #576790 solid;
+    width: 10px;
+    cursor: pointer;
+    transform: rotate(-50deg) translate(-10px, -12px);
+}
+
+.perfil {
+    width: 7rem;
+    height: 26.5rem;
+    margin-top: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.perfil .userImage {
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: 2.1rem;
+    border-radius: 50%;
+}
+
+.perfil .profileButton {
+    display: flex;
+    flex-direction: column;
+    gap: 2.1rem;
+}
+
+footer {
+    background: #131B31;
+    color: #fff;
+    height: 5vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: var(--jost);
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px #576790 solid;
+    height: 5.9rem;
+    padding-left: 2.1rem;
+    align-items: center;
+}
+
+.pesquisar input {
+    width: 29rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    background: #EFEFFC;
+}
+
+.pesquisar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.pesquisar button {
+    cursor: pointer;
+    width: 8.6rem;
+    height: 3.7rem;
+    background: #576790;
+    color: #fff;
+    border-radius: 0.5rem;
+}
+
+.click {
+    transform: rotate(178deg);
+}
+
+.selos {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-right: 6rem;
+}
+
+.selos p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    border: 1px #525252 solid;
+    font-family: var(--roboto);
+    font-weight: 400;
+    font-size: 3rem;
+}
