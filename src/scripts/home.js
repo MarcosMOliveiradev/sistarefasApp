@@ -55,6 +55,21 @@ link.forEach((e) => {
         if ( e.id === "relatorioDiario" ) {
             window.location.href = './relatorioDiario.html'
         }
+
+        if (e.id === "mensal") {
+            const lista = document.getElementById('ListButton')
+            lista.textContent = "Mensal"
+        }
+
+        if (e.id === "codigo") {
+            const lista = document.getElementById('ListButton')
+            lista.textContent = "Código"
+        }
+
+        if (e.id === "diario") {
+            const lista = document.getElementById('ListButton')
+            lista.textContent = "Diário"
+        }
     })
 })
 
