@@ -183,6 +183,10 @@ nav {
     border-radius: 0.5rem;
 }
 
+.seta2 {
+    margin-left: 1rem;
+}
+
 .click {
     transform: rotate(178deg);
 }

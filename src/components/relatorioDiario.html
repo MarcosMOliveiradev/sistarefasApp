@@ -46,11 +46,11 @@
                 <div class="pesquisar">
                     <input type="text" id="pesquisar">
                     <label for="pesquisar"><img src="../imgs/lupa.svg" alt="Lupa"></label>
-                    <button class="listButton">Diário <img src="../imgs/seta.svg" alt="seta" class="seta2"></button>
+                    <button class="listButton" id="ListButton">Diário<img src="../imgs/seta.svg" alt="seta" class="seta2"></button>
                     <ul class="buttonList close">
-                        <li><a>Diário</a></li>
-                        <li><a>Mensal</a></li>
-                        <li><a>Código</a></li>
+                        <li><a id="diario">Diário</a></li>
+                        <li><a id="mensal">Mensal</a></li>
+                        <li><a id="codigo">Código</a></li>
                     </ul>
                 </div>
 
@@ -60,10 +60,20 @@
                 </div>
             </nav>
 
+            <section>
+                <div>
+                    <button class="criarAtividade"><img src="../imgs/CriarAtividade.svg" alt=""></button>
+                </div>
+
+                <div class="relatorio">
+                    
+                </div>
+            </section>
+
     </div>
     <footer>
         <p>DIREITOS RESERVADOS © W ENGENHARIA LTDA - 2023</p>
     </footer>
-    <script src="../scripts/home.js"></script>
+    <script type="module" src="../scripts/home.js" async defer></script>
 </body>
 </html>
