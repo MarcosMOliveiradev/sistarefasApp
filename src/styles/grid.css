@@ -1,0 +1,101 @@
+.grid {
+    display: grid;
+    gap: 2rem;
+    margin: 2rem auto;
+}
+
+.tituloCadastro {
+    grid-area: titulo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--jost);
+    font-size: 3rem;
+}
+
+.data {
+    grid-area: data;
+}
+
+.codigo {
+    grid-area: codigo;
+}
+
+.setor {
+    grid-area: setor;
+}
+
+.descricao {
+    grid-area: descricao;
+}
+
+.IdDoc {
+    grid-area: idDoc;
+}
+
+.qtdFolha {
+    grid-area: qtdFolha;
+}
+
+.inicio {
+    grid-area: inicio;
+}
+
+.termino {
+    grid-area: termino;
+}
+
+.btn {
+    grid-area: btn;
+    font-family: var(--jost);
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+}
+
+.btn button {
+    cursor: pointer;
+    width: 13rem;
+    height: 80%;
+    border-radius: 5px;
+    background: #576790;
+    color: #fff;
+}
+
+.cadastro {
+    grid-template-areas: 
+    "titulo titulo titulo"
+    "data codigo setor"
+    "descricao descricao idDoc"
+    "qtdFolha inicio termino"
+    "btn btn btn"
+    ;
+    padding: 0 9rem;
+}
+
+input {
+    border-radius: 0.5rem;
+    width: 100%;
+    height: 3rem;
+    border: #7C7C7C 1px solid;
+}
+
+.fechar {
+    position: absolute;
+    margin-top: 2rem;
+    margin-left: 54rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: rgb(150, 20, 20);
+    color: #fff;
+}
+
+@media (max-width: 700px) {
+    .fechar {
+        margin-left: 48rem;
+    }
+}
