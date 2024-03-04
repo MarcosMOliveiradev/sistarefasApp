@@ -278,3 +278,15 @@ footer {
         font-size: 12px;
     }
 }
+
+@media (max-height: 700px) {
+    .buttonMenu {
+        margin-top: 5rem;
+    }
+    .perfil {
+        margin-top: 34rem;
+    }
+    .tb {
+        height: 45rem;
+    }
+}
